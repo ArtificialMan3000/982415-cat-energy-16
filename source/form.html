@@ -27,7 +27,101 @@
     </nav>
   </header>
   <main>
-
+    <h1 class="page-title">Подбор программы</h1>
+    <section class="programm-selection">
+      <h2 class="visually-hidden">Форма для подбора программы питания</h2>
+      <p class="programm-selection__lead">
+        Заполните анкету и мы подберем
+        программу питания для вашего кота
+      </p>
+      <form class="programm-selection__form" action="echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+        <fieldset class="programm-selection__group programm-selection__group--cat">
+          <p class="programm-selection__item input-item">
+            <label class="input-item__label" for="cat_name">Имя:*</label>
+            <input class="input-item__input" id="cat_name" name="cat-name" type="text" value="Барсик">
+          </p>
+          <p class="programm-selection__item input-item">
+            <label class="input-item__label" for="cat_weight">Вес (кг):*</label>
+            <input class="input-item__input" id="cat_weight" name="cat-weight" type="text" value="7">
+          </p>
+          <p class="programm-selection__item input-item">
+            <label class="input-item__label" for="cat_age">Возраст (лет):*</label>
+            <input class="input-item__input" id="cat_age" name="cat-age" type="text" value="7">
+          </p>
+        </fieldset>
+        <fieldset class="programm-selection__group programm-selection__group--purpose">
+          <div class="programm-selection__item radio-item">
+            <label class="radio-item__label">
+              <input class="radio-item__input" type="radio" name="purpose" checked>
+              <span class="radio-item__text">Похудение</span>
+            </label>
+            <label class="radio-item__label">
+              <input class="radio-item__input" type="radio" name="purpose">
+              <span class="radio-item__text">Набор массы</span>
+            </label>
+            <label class="radio-item__label">
+              <input class="radio-item__input" type="radio" name="purpose">
+              <span class="radio-item__text">Не знаю (нужен ваш совет)</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="programm-selection__group programm-selection__group--contacts">
+          <legend class="programm-selection__legend">Контактные данные (владельца кота)</legend>
+          <p class="programm-selection__item input-item">
+            <label class="input-item__label" for="owner_email">E-mail:*</label>
+            <input class="input-item__input--email" id="owner_email" name="owner-email" type="email" value="kuklachev@gmail.com">
+          </p>
+          <p class="programm-selection__item input-item">
+            <label class="input-item__label" for="owner_phone">Телефон:*</label>
+            <input class="input-item__input--phone" id="owner_phone" name="owner-phone" type="tel" value="8 (960) 900-60-90">
+          </p>
+        </fieldset>
+        <fieldset class="programm-selection__group programm-selection__group--comment">
+          <legend class="programm-selection__legend">Комментарий</legend>
+          <div class="programm-selection__item textarea-item">
+            <textarea class="textarea-item__input" name="comment" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </fieldset>
+        <fieldset class="programm-selection__group programm-selection__group--additional">
+          <legend class="programm-selection__legend">Дополнительно</legend>
+          <div class="programm-selection__item checkbox-item">
+            <label class="checkbox-item__label">
+              <input class="checkbox-item__input" type="checkbox" name="sweetener" checked>
+              <span class="checkbox-item__text">Сахарозаменитель</span>
+            </label>
+            <label class="checkbox-item__label">
+              <input class="checkbox-item__input" type="checkbox" name="water">
+              <span class="radio-item__text">Питьевая вода</span>
+            </label>
+            <label class="checkbox-item__label">
+              <input class="checkbox-item__input" type="checkbox" name="milk">
+              <span class="checkbox-item__text">Молоко</span>
+            </label>
+            <label class="checkbox-item__label">
+              <input class="checkbox-item__input" type="checkbox" name="vitamins">
+              <span class="checkbox-item__text">Витамины</span>
+            </label>
+          </div>
+        </fieldset>
+        <button class="programm-selection__button button" type="submit">Отправить заявку</button>
+        <p class="programm-selection__note">* — Обязательные поля</p>
+      </form>
+    </section>
+    <section class="cooperation">
+      <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
+      <p class="cooperation__title">Приглашаем
+          к сотрудничеству
+          дилеров!
+      </p>
+      <address class="cooperation__address">
+          ул. Большая Конюшенная, д. 19/8
+          Санкт-Петербург
+      </address>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+      <img src="http://placekitten.com/320/400" alt="Наш адрес - ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" class="map__img" width="320" height="400">
+    </section>
   </main>
   <footer class="page-footer">
     <img class="page-footer__logo" src="http://placekitten.com/128/24" alt="Cat Energy - функциональное питание для котов"  width="128" height="24">
