@@ -1,7 +1,11 @@
 .burger {
+  display: block;
+  width: 25px;
+  height: 19px;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../img/icon-mobile-menu.svg");
+  cursor: pointer;
 }
