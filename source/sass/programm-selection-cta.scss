@@ -1,0 +1,30 @@
+.programm-selection-cta {
+  color: $white;
+  margin-bottom: 22px;
+}
+
+.programm-selection-cta__title {
+  margin-bottom: 19px;
+  font-size: $title1-font-size;
+  line-height: 36px;
+}
+
+.programm-selection-cta__lead {
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.programm-selection-cta__bg-wrap {
+  min-height: 305px;
+  padding-top: 29px;
+  padding-bottom: 165px;
+  background-color: $brand-color;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  text-align: center;
+}
+
+.programm-selection-cta__img {
+  margin-top: -138px;
+}

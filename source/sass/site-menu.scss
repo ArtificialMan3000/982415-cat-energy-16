@@ -1,0 +1,16 @@
+.site-menu {
+  @include list-reset();
+  width: 100%;
+}
+
+.site-menu__item {
+  @include header-row();
+  justify-content: center;
+}
+
+.site-menu__link {
+  @include title();
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+}
