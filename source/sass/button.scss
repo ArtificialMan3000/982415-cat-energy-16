@@ -5,9 +5,13 @@
   width: 100%;
   min-height: 40px;
   font-family: $title-font-family;
-  line-height: 18px;
   color: $white;
   border: none;
   background-color: $brand-color;
   text-transform: uppercase;
+}
+
+.button--pale {
+  background-color: $gray-light;
+  color: $text-color;
 }

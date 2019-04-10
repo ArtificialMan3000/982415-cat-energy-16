@@ -1,0 +1,31 @@
+.catalog-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-card__desc {
+  width: 50%;
+}
+
+.catalog-card__properties {
+  font-size: $small-font-size;
+  line-height: 16px;
+}
+
+.catalog-card__title {
+  width: 72px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  font-size: $title3-font-size;
+  line-height: 20px;
+}
+
+.catalog-card__prop-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-card__button {
+  font-size: 16px;
+  line-height: 20px;
+}
