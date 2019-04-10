@@ -1,0 +1,7 @@
+.title {
+  @include title();
+}
+//Верхний заголовок на главной странице
+.title--index {
+  color: $white;
+}

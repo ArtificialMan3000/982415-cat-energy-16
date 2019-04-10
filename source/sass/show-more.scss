@@ -1,0 +1,33 @@
+.show-more {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.show-more__button-plus {
+  display: block;
+  width: 31px;
+  height: 31px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  background: url("../img/icon-plus-mobile.svg");
+  opacity: 0.2;
+}
+
+.show-more__title {
+  font-size: $title3-font-size;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+
+.show-more__lead {
+  margin-bottom: 22px;
+  font-size: $small-font-size;
+  line-height: 16px;
+}
+
+.show-more__button {
+  font-size: $title3-font-size;
+  line-height: 20px;
+}

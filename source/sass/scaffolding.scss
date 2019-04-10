@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  min-width: $mobile-width;
+
+  font-family: $text-font-family;
+  font-size: $text-font-size;
+  font-weight: 400;
+  line-height: $text-line-height;
+  color: #464646;
+}
+
+.inner-page .main {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

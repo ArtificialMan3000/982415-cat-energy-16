@@ -1,0 +1,17 @@
+.socials__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  margin-right: 35px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}

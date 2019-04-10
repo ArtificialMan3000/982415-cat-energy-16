@@ -1,0 +1,20 @@
+//Сброс стилей у списков
+@mixin list-reset() {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+//Стилизация строк в хедере
+@mixin header-row() {
+  display: flex;
+  align-items: center;
+  min-height: $header-row-height;
+  border-bottom: 1px solid #e6e6e6;
+}
+//Базовые стили заголовков
+@mixin title() {
+  margin: 0;
+  font-family: $title-font-family;
+  color: $title-color;
+  font-weight: 400;
+}
