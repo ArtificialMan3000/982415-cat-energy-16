@@ -1,0 +1,22 @@
+.cooperation--catalog-page {
+  background-color: $gray-light;
+}
+
+.cooperation__container {
+  display: flex;
+  padding-top: 31px;
+  padding-bottom: 36px;
+}
+
+.cooperation__title {
+  width: 123px;
+  margin-right: 19px;
+  font-size: $title3-font-size;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.cooperation__address {
+  font-style: normal;
+  line-height: 20px;
+}

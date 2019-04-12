@@ -1,0 +1,28 @@
+.gift {
+  position: relative;
+  height: 289px;
+  margin-bottom: 35px;
+  padding-top: 190px;
+  padding-left: 55px;
+  padding-right: 55px;
+  background: $brand-color url("../img/gift-photo-mobile@1x.jpg") no-repeat top center;
+}
+
+.gift::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  width: 56px;
+  height: 61px;
+  margin: 0 auto;
+  background: url("../img/icon-gift.svg") no-repeat center;
+}
+
+.gift__text {
+  font-size: $title3-font-size;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+}

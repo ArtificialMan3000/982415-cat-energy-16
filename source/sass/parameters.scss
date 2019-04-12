@@ -1,0 +1,41 @@
+.parameters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.parameters__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+  margin-bottom: 38px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  border: $main-divider #cdcdcd;
+  border-radius: 3px;
+}
+
+.parameters__name {
+  position: absolute;
+  top: calc(100% - 8px);
+  width: 87px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: $small-font-size;
+  line-height: 12px;
+  text-transform: lowercase;
+  text-align: center;
+  order: 2;
+  background-color: #f2f2f2;
+}
+
+.parameters__value {
+  @include title();
+  font-size: $title2-font-size;
+  line-height: 24px;
+  text-transform: uppercase;
+  order: 1;
+}

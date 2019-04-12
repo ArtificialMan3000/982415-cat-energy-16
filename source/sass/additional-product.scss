@@ -1,0 +1,29 @@
+.additional__list {
+  @include list-reset();
+  border-top: $main-divider #ededed;
+}
+
+.additional-product {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  border-bottom: $main-divider #cdcdcd;
+}
+
+.additional-product__title {
+  font-size: $title3-font-size;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.additional-product__rate {
+  display: flex;
+  margin-bottom: 14px;
+  line-height: 18px;
+}
+
+.additional-product__price {
+  margin-left: auto;
+  text-transform: uppercase;
+}
