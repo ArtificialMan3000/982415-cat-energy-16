@@ -4,3 +4,7 @@
   padding-left: $main-external-paddings;
   padding-right: $main-external-paddings;
 }
+
+.container--fix-mobile {
+  width: $mobile-width;
+}

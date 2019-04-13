@@ -1,0 +1,15 @@
+.dl-alt-item {
+  @include title();
+  margin: 0 auto;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.dl-alt-item__name {
+  display: inline-block;
+}
+
+.dl-alt-item__value {
+  display: inline-block;
+  margin: 0;
+}

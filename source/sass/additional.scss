@@ -1,1 +1,14 @@
-//
+.additional {
+  margin-bottom: 39px;
+}
+
+.additional__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional__list {
+  @include list-reset();
+  border-top: $main-divider #ededed;
+}

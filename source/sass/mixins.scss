@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   min-height: $header-row-height;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: $main-divider #e6e6e6;
 }
 //Базовые стили заголовков
 @mixin title() {
