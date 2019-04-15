@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   min-height: $header-row-height;
-  border-bottom: $main-divider #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 //Базовые стили заголовков
 @mixin title() {
@@ -17,4 +17,19 @@
   font-family: $title-font-family;
   color: $title-color;
   font-weight: 400;
+}
+//Внешние паддинги по краям страницы
+@mixin ext-paddings() {
+  padding-left: $mobile-external-paddings;
+  padding-right: $mobile-external-paddings;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-external-paddings;
+    padding-right: $tablet-external-paddings;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-external-paddings;
+    padding-right: $desktop-external-paddings;
+  }
 }

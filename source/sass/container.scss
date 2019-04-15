@@ -1,8 +1,5 @@
 .container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: $main-external-paddings;
-  padding-right: $main-external-paddings;
+  @include ext-paddings();
 }
 
 .container--fix-mobile {

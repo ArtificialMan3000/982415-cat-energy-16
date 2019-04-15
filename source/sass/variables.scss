@@ -1,5 +1,12 @@
 //Breakpoints
 $mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1300px;
+
+//Content widthes
+$mobile-content-width: 280px;
+$tablet-content-width: 708px;
+$desktop-content-width: 1220px;
 
 //Font
 $title-font-family: "Oswald", "Arial", sans-serif;
@@ -22,8 +29,9 @@ $white: #ffffff;
 $gray-light: #f2f2f2;
 
 //Sizes
-$main-external-paddings: 20px;
-$header-row-height: 66px;
+$mobile-external-paddings: 20px;
+$tablet-external-paddings: 30px;
+$desktop-external-paddings: 40px;
 
 //Other
 $main-divider: 1px solid;

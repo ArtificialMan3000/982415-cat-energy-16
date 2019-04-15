@@ -1,10 +1,34 @@
 .catalog-grid {
   @include list-reset();
   border-top: $main-divider #ededed;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$tablet-external-paddings;
+    margin-right: -$tablet-external-paddings;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -$desktop-external-paddings;
+    margin-right: -$desktop-external-paddings;
+  }
 }
 
 .catalog-grid__item {
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: $main-divider #ededed;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-left: $tablet-external-paddings;
+    margin-right: $tablet-external-paddings;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-left: $desktop-external-paddings;
+    margin-right: $desktop-external-paddings;
+  }
 }

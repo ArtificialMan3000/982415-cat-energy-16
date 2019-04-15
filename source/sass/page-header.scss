@@ -1,7 +1,40 @@
 .page-header__row {
-  @include header-row();
+  @include ext-paddings();
+  display: flex;
+  align-items: center;
+  min-height: 66px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__logo {
+  display: block;
 }
 
 .page-header__burger {
   margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__row {
+    width: auto;
+    min-height: 90px;
+    margin: 0;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header--index {
+    position: absolute;
+    width: 100%;
+  }
+
+  .page-header__row {
+    min-height: 130px;
+  }
 }
