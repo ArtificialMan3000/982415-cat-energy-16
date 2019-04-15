@@ -33,3 +33,18 @@
     padding-right: $desktop-external-paddings;
   }
 }
+//Центровщик
+@mixin container() {
+  @include ext-paddings();
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+

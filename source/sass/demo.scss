@@ -2,15 +2,43 @@
   padding-top: 33px;
   padding-bottom: 39px;
   background-color: $gray-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: initial;
+  }
 }
 
 .demo__title {
+  @include container();
   margin-bottom: 33px;
   font-size: $title1-font-size;
   line-height: 60px;
 }
 
+.demo__wrap {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .demo__desc {
+  @include container();
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: $gray-light;
+  }
+}
+
+.demo__text {
   margin-bottom: 27px;
   line-height: 18px;
+}
+
+.demo__interactive {
+  @media (min-width: $tablet-width) {
+    background-color: $gray-light;
+  }
 }
