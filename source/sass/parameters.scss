@@ -3,6 +3,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 44px;
+  background-color: inherit;
 }
 
 .parameters__item {
@@ -16,6 +17,7 @@
   padding-bottom: 18px;
   border: $main-divider #cdcdcd;
   border-radius: 3px;
+  background-color: inherit;
 }
 
 .parameters__name {
@@ -29,7 +31,7 @@
   text-transform: lowercase;
   text-align: center;
   order: 2;
-  background-color: #f2f2f2;
+  background-color: inherit;
 }
 
 .parameters__value {

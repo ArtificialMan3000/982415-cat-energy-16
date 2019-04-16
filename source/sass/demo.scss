@@ -15,20 +15,33 @@
   line-height: 60px;
 }
 
-.demo__wrap {
+.demo__bg-wrap {
   @media (min-width: $desktop-width) {
     display: flex;
+    background-color: $gray-light;
+  }
+}
+
+.demo__desc-bg-wrap {
+  background-color: $gray-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $gray-light;
   }
 }
 
 .demo__desc {
   @include container();
+  background-color: inherit;
 
   @media (min-width: $desktop-width) {
     width: auto;
     margin: 0;
     padding: 0;
-    background-color: $gray-light;
   }
 }
 
@@ -37,8 +50,18 @@
   line-height: 18px;
 }
 
-.demo__interactive {
+.demo__interactive-bg-wrap {
   @media (min-width: $tablet-width) {
     background-color: $gray-light;
+  }
+}
+
+.demo__interactive {
+  @include container();
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+    padding: 0;
   }
 }
