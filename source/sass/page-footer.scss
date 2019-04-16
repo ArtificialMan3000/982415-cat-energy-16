@@ -1,5 +1,11 @@
 .page-footer {
+  @include ext-paddings();
   background-color: $gray-light;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {

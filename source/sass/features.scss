@@ -1,5 +1,17 @@
 .features {
   @include list-reset();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$tablet-external-paddings;
+    margin-right: -$tablet-external-paddings;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -$desktop-external-paddings;
+    margin-right: -$desktop-external-paddings;
+  }
 }
 
 .features__item {
@@ -9,6 +21,19 @@
   padding-bottom: 6px;
   padding-left: 80px;
   min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding-right: 79px;
+    margin-left: $tablet-external-paddings;
+    margin-right: $tablet-external-paddings;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-left: $desktop-external-paddings;
+    margin-right: $desktop-external-paddings;
+  }
 }
 
 .features__item::before {

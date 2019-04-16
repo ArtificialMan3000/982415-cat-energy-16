@@ -4,7 +4,6 @@
 }
 
 .site-menu__item {
-  @include header-row();
   justify-content: center;
 }
 
@@ -13,4 +12,11 @@
   display: block;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .site-menu {
+    display: flex;
+    width: auto;
+  }
 }

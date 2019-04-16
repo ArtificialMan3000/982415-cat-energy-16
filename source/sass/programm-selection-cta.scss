@@ -1,6 +1,15 @@
 .programm-selection-cta {
-  color: $white;
+  @include ext-paddings();
+  min-height: 480px;
   margin-bottom: 22px;
+  padding-top: 29px;
+  padding-bottom: 165px;
+  background:
+    url("../img/index-background-mobile@1x.jpg") no-repeat top center,
+    url("../img/index-can-mobile@1x.png") no-repeat;
+  background-color: $brand-color;
+  text-align: center;
+  color: $white;
 }
 
 .programm-selection-cta__title {
@@ -14,17 +23,15 @@
   text-transform: uppercase;
 }
 
-.programm-selection-cta__bg-wrap {
-  min-height: 305px;
-  padding-top: 29px;
-  padding-bottom: 165px;
-  background-color: $brand-color;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  text-align: center;
+@media (min-width: $tablet-width) {
+  .programm-selection-cta {
+    min-height: 860px;
+    color: $title-color;
+  }
 }
 
-.programm-selection-cta__img {
-  margin-top: -138px;
+@media (min-width: $desktop-width) {
+  .programm-selection-cta {
+    min-height: 696px;
+  }
 }
