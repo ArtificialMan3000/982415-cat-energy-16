@@ -1,0 +1,7 @@
+.container {
+  @include container();
+}
+
+.container--desktop {
+  @include container-desktop();
+}

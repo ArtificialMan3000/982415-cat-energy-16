@@ -9,7 +9,6 @@
 }
 
 .demo__title {
-  @include container();
   margin-bottom: 33px;
   font-size: $title1-font-size;
   line-height: 60px;
@@ -17,8 +16,13 @@
 
 .demo__bg-wrap {
   @media (min-width: $desktop-width) {
-    display: flex;
     background-color: $gray-light;
+  }
+}
+
+.demo__container-desktop {
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
@@ -35,13 +39,12 @@
 }
 
 .demo__desc {
-  @include container();
   background-color: inherit;
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    margin: 0;
-    padding: 0;
+    @include container-reset();
+    width: 570px;
+    margin-right: 80px;
   }
 }
 
@@ -57,11 +60,8 @@
 }
 
 .demo__interactive {
-  @include container();
-
   @media (min-width: $desktop-width) {
-    width: auto;
-    margin: 0;
-    padding: 0;
+    @include container-reset();
+    width: 570px;
   }
 }

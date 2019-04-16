@@ -1,0 +1,34 @@
+.contacts {
+  position: relative;
+}
+
+.contacts--catalog-page {
+  background-color: $gray-light;
+}
+
+.contacts__overlayer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 31px;
+  padding-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    width: 570px;
+    background-color: #ffffff;
+  }
+}
+
+.contacts__title {
+  width: 123px;
+  margin-right: 19px;
+  font-size: $title3-font-size;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-style: normal;
+  line-height: 20px;
+}
