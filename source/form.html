@@ -42,41 +42,43 @@
         </p>
       </div>
       <form class="programm-selection__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-        <fieldset class="programm-selection__group programm-selection__group--cat">
-          <div class="container">
-            <p class="programm-selection__item programm-selection__item--cat input-item input-item--text">
-              <label class="input-item__label input-item__label--text" for="cat_name">Имя:*</label>
-              <input class="input-item__input input-item__input--text" id="cat_name" name="cat-name" type="text" value="Барсик">
-            </p>
-            <p class="programm-selection__item programm-selection__item--cat input-item">
-              <label class="input-item__label input-item__label--text" for="cat_weight">Вес (кг):*</label>
-              <input class="input-item__input input-item__input--text" id="cat_weight" name="cat-weight" type="text" value="7">
-            </p>
-            <p class="programm-selection__item programm-selection__item--cat input-item">
-              <label class="input-item__label input-item__label--text" for="cat_age">Возраст (лет):*</label>
-              <input class="input-item__input input-item__input--text" id="cat_age" name="cat-age" type="text" value="7">
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="programm-selection__group programm-selection__group--purpose">
-          <div class="container">
-            <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-              <input class="input-item__hidden visually-hidden" type="radio" name="purpose" checked>
-              <div class="input-item__input input-item__input--radio"></div>
-              <span class="input-item__label input-item__label--radio">Похудение</span>
-            </label>
-            <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-              <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
-              <div class="input-item__input input-item__input--radio"></div>
-              <span class="input-item__label input-item__label--radio">Набор массы</span>
-            </label>
-            <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-              <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
-              <div class="input-item__input input-item__input--radio"></div>
-              <span class="input-item__label input-item__label--radio">Не знаю (нужен ваш совет)</span>
-            </label>
-          </div>
-        </fieldset>
+        <div class="programm-selection__cat-purpose-container container--desktop">
+          <fieldset class="programm-selection__group programm-selection__group--cat">
+            <div class="programm-selection__group-container container">
+              <p class="programm-selection__item programm-selection__item--cat input-item input-item--text">
+                <label class="input-item__label input-item__label--text" for="cat_name">Имя:*</label>
+                <input class="input-item__input input-item__input--text" id="cat_name" name="cat-name" type="text" value="Барсик">
+              </p>
+              <p class="programm-selection__item programm-selection__item--cat input-item">
+                <label class="input-item__label input-item__label--text" for="cat_weight">Вес (кг):*</label>
+                <input class="input-item__input input-item__input--text" id="cat_weight" name="cat-weight" type="text" value="7">
+              </p>
+              <p class="programm-selection__item programm-selection__item--cat input-item">
+                <label class="input-item__label input-item__label--text" for="cat_age">Возраст (лет):*</label>
+                <input class="input-item__input input-item__input--text" id="cat_age" name="cat-age" type="text" value="7">
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="programm-selection__group programm-selection__group--purpose">
+            <div class="programm-selection__group-container container">
+              <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
+                <input class="input-item__hidden visually-hidden" type="radio" name="purpose" checked>
+                <div class="input-item__input input-item__input--radio"></div>
+                <span class="input-item__label input-item__label--radio">Похудение</span>
+              </label>
+              <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
+                <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
+                <div class="input-item__input input-item__input--radio"></div>
+                <span class="input-item__label input-item__label--radio">Набор массы</span>
+              </label>
+              <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
+                <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
+                <div class="input-item__input input-item__input--radio"></div>
+                <span class="input-item__label input-item__label--radio">Не знаю (нужен ваш совет)</span>
+              </label>
+            </div>
+          </fieldset>
+        </div>
         <div class="container">
           <fieldset class="programm-selection__group programm-selection__group--contacts">
             <legend class="programm-selection__legend title title--line">
@@ -103,26 +105,28 @@
             <legend class="programm-selection__legend title title--line">
               <span class="title__text--line">Дополнительно</span>
             </legend>
-            <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
-              <input class="input-item__hidden visually-hidden" type="checkbox" name="sweetener" checked>
-              <div class="input-item__input input-item__input--checkbox"></div>
-              <span class="input-item__label input-item__label--checkbox">Сахарозаменитель</span>
-            </label>
-            <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
-              <input class="input-item__hidden visually-hidden" type="checkbox" name="water">
-              <div class="input-item__input input-item__input--checkbox"></div>
-              <span class="input-item__label input-item__label--checkbox">Питьевая вода</span>
-            </label>
-            <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
-              <input class="input-item__hidden visually-hidden" type="checkbox" name="milk">
-              <div class="input-item__input input-item__input--checkbox"></div>
-              <span class="input-item__label input-item__label--checkbox">Молоко</span>
-            </label>
-            <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
-              <input class="input-item__hidden visually-hidden" type="checkbox" name="vitamins">
-              <div class="input-item__input input-item__input--checkbox"></div>
-              <span class="input-item__label input-item__label--checkbox">Витамины</span>
-            </label>
+            <div class="programm-selection__flex-inner">
+              <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
+                <input class="input-item__hidden visually-hidden" type="checkbox" name="sweetener" checked>
+                <div class="input-item__input input-item__input--checkbox"></div>
+                <span class="input-item__label input-item__label--checkbox">Сахарозаменитель</span>
+              </label>
+              <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
+                <input class="input-item__hidden visually-hidden" type="checkbox" name="water">
+                <div class="input-item__input input-item__input--checkbox"></div>
+                <span class="input-item__label input-item__label--checkbox">Питьевая вода</span>
+              </label>
+              <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
+                <input class="input-item__hidden visually-hidden" type="checkbox" name="milk">
+                <div class="input-item__input input-item__input--checkbox"></div>
+                <span class="input-item__label input-item__label--checkbox">Молоко</span>
+              </label>
+              <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
+                <input class="input-item__hidden visually-hidden" type="checkbox" name="vitamins">
+                <div class="input-item__input input-item__input--checkbox"></div>
+                <span class="input-item__label input-item__label--checkbox">Витамины</span>
+              </label>
+            </div>
           </fieldset>
           <button class="programm-selection__button button" type="submit">Отправить заявку</button>
           <p class="programm-selection__note">* — Обязательные поля</p>

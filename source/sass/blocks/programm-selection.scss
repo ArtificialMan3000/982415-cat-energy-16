@@ -9,6 +9,13 @@
   padding-bottom: 34px;
 }
 
+.programm-selection__cat-purpose-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .programm-selection__group {
   margin: 0;
   padding: 0;
@@ -17,6 +24,10 @@
   &--cat {
     padding-bottom: 23px;
     border-bottom: $main-divider #ededed;
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+    }
   }
 
   &--purpose {
@@ -24,6 +35,10 @@
     padding-bottom: 22px;
     margin-bottom: 31px;
     border-bottom: $main-divider #ededed;
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+    }
   }
 
   &--contacts {
@@ -36,6 +51,18 @@
 
   &--additional {
     margin-bottom: 34px;
+  }
+}
+
+.programm-selection__group-container {
+  @media (min-width: $desktop-width) {
+    @include container-reset();
+  }
+}
+
+.programm-selection__flex-inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
