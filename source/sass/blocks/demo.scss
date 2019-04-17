@@ -1,40 +1,26 @@
 .demo {
-  padding-top: 33px;
   padding-bottom: 39px;
   background-color: $gray-light;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     background-color: initial;
   }
 }
 
 .demo__title {
   margin-bottom: 33px;
+  padding-top: 33px;
   font-size: $title1-font-size;
   line-height: 60px;
-}
 
-.demo__bg-wrap {
   @media (min-width: $desktop-width) {
-    background-color: $gray-light;
+    background-color: #ffffff;
   }
 }
 
 .demo__container-desktop {
   @media (min-width: $desktop-width) {
     display: flex;
-  }
-}
-
-.demo__desc-bg-wrap {
-  background-color: $gray-light;
-
-  @media (min-width: $tablet-width) {
-    background-color: white;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $gray-light;
   }
 }
 
