@@ -1,0 +1,33 @@
+.additional {
+  margin-bottom: 39px;
+}
+
+.additional__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.additional__list {
+  @include list-reset();
+  border-top: $main-divider #ededed;
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    margin-right: 80px;
+  }
+}
+
+.additional__gift {
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}

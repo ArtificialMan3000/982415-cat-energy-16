@@ -33,3 +33,36 @@
     padding-right: $desktop-external-paddings;
   }
 }
+//Центровщик
+@mixin container() {
+  @include ext-paddings();
+  width: $mobile-width;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+//Центровщик только для десктопной ширины
+@mixin container-desktop() {
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: $desktop-external-paddings;
+    padding-right: $desktop-external-paddings;
+  }
+}
+//Сброс центровщика
+@mixin container-reset() {
+  width: auto;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+

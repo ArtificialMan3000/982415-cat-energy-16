@@ -1,7 +1,8 @@
 .page-footer {
-  @include ext-paddings();
   background-color: $gray-light;
+}
 
+.page-footer__container {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;

@@ -16,13 +16,13 @@
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list site-menu">
-        <li class="page-header__row site-menu__item site-menu__item--current container">
+        <li class="page-header__row site-menu__item site-menu__item--current">
           <a class="site-menu__link">Главная</a>
         </li>
-        <li class="page-header__row site-menu__item container">
+        <li class="page-header__row site-menu__item">
           <a href="catalog.html" class="site-menu__link">Каталог продукции</a>
         </li>
-        <li class="page-header__row site-menu__item container">
+        <li class="page-header__row site-menu__item">
           <a href="form.html" class="site-menu__link">Подбор программы</a>
         </li>
       </ul>
@@ -30,7 +30,7 @@
   </header>
   <main>
     <h1 class="visually-hidden">Cat Energy - функциональное питание для котов</h1>
-    <section class="programm-selection-cta">
+    <section class="programm-selection-cta container">
       <h2 class="programm-selection-cta__title title title--index">Функциональное
         питание для котов</h2>
       <p class="programm-selection-cta__lead title title--index">Занялся собой? Займись котом!</p>
@@ -79,88 +79,98 @@
       </ul>
     </section>
     <section class="demo">
-      <div class="container">
-        <h2 class="demo__title title">Живой пример</h2>
-        <p class="demo__desc">Борис сбросил 5 кг за 2 месяца,
-          просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <dl class="demo__parameters parameters">
-          <div class="parameters__item">
-            <dt class="parameters__name">Снижение веса</dt>
-            <dd class="parameters__value">5 кг</dd>
-          </div>
-          <div class="parameters__item">
-            <dt class="parameters__name">Затрачено времени</dt>
-            <dd class="parameters__value">60 дней</dd>
-          </div>
-          <div class="parameters__alt-item dl-alt-item">
-            <dt class="dl-alt-item__name">Затраты на питание:</dt>
-            <dd class="dl-alt-item__value">15 000 руб.</dd>
-          </div>
-        </dl>
-        <div class="demo_interactive img-changer">
-          <div class="img-changer__img-wrap">
-            <img class="img-changer__img1" src="img/before-mobile@1x.png" alt="Толстый кот" width="311" height="232">
-            <img class="img-changer__img2" src="img/after-mobile@1x.png" alt="Тонкий кот" width="311" height="232">
-          </div>
-          <div class="img-changer__control">
-            <span class="img-changer__from">Было</span>
-            <div class="img-changer__line-outer">
-              <div class="img-changer__line-inner"></div>
+      <h2 class="demo__title title">
+        <div class="container">Живой пример</div>
+      </h2>
+      <div class="demo__container-desktop container--desktop">
+        <div class="demo__desc container">
+          <p class="demo__text">Борис сбросил 5 кг за 2 месяца,
+            просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок!
+            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <dl class="demo__parameters parameters">
+            <div class="parameters__item">
+              <dt class="parameters__name">Снижение веса</dt>
+              <dd class="parameters__value">5 кг</dd>
             </div>
-            <span class="img-changer__to">Стало</span>
+            <div class="parameters__item">
+              <dt class="parameters__name">Затрачено времени</dt>
+              <dd class="parameters__value">60 дней</dd>
+            </div>
+            <div class="parameters__alt-item dl-alt-item">
+              <dt class="dl-alt-item__name">Затраты на питание:</dt>
+              <dd class="dl-alt-item__value">15 000 руб.</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="demo__interactive-bg-wrap">
+          <div class="demo__interactive img-changer container">
+            <div class="img-changer__img-wrap">
+              <img class="img-changer__img1" src="img/before-mobile@1x.png" alt="Толстый кот" width="311" height="232">
+              <img class="img-changer__img2" src="img/after-mobile@1x.png" alt="Тонкий кот" width="311" height="232">
+            </div>
+            <div class="img-changer__control">
+              <span class="img-changer__from">Было</span>
+              <div class="img-changer__line-outer">
+                <div class="img-changer__line-inner"></div>
+              </div>
+              <span class="img-changer__to">Стало</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="cooperation">
-      <div class="container container--fix-mobile cooperation__container">
-        <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
-        <p class="cooperation__title title">Приглашаем
-            к сотрудничеству
-            дилеров!
-        </p>
-        <address class="cooperation__address">
-            ул. Большая Конюшенная, д. 19/8
-            Санкт-Петербург
-        </address>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__overlayer">
+          <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
+          <p class="contacts__title title">Приглашаем
+              к сотрудничеству
+              дилеров!
+          </p>
+          <address class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8
+              Санкт-Петербург
+          </address>
+        </div>
       </div>
-    </section>
-    <section class="map">
-      <h2 class="visually-hidden">Карта проезда</h2>
-      <img src="img/bg-map-mobile@1x.png" alt="Наш адрес - ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" class="map__img" width="320" height="400">
+      <div class="contacts__map">
+        <h2 class="visually-hidden">Карта проезда</h2>
+        <img src="img/bg-map-mobile@1x.png" alt="Наш адрес - ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" class="map__img" width="320" height="400">
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__logo">
-      <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов"  width="128" height="24">
-    </div>
-    <div class="socials page-footer__socials">
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a href="http://vk.com" class="socials__link">
-            <img class="socials__img" src="img/icon-vk-mobile.svg" alt="Мы Вконтакте" width="22" height="12">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="http://instagramm.com" class="socials__link">
-            <img class="socials__img" src="img/icon-insta-mobile.svg" alt="Мы в Instagramm" width="17" height="17">
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="http://facebook.com" class="socials__link">
-            <img class="socials__img" src="img/icon-fb-mobile.svg" alt="Мы в Facebook" width="10" height="19">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__htmlacademy htmlacademy">
-      <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="htmlacademy__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="htmlacademy__logo-img" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
-      </a>
+    <div class="page-footer__container container">
+      <div class="page-footer__logo">
+        <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов"  width="128" height="24">
+      </div>
+      <div class="socials page-footer__socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="http://vk.com" class="socials__link">
+              <img class="socials__img" src="img/icon-vk-mobile.svg" alt="Мы Вконтакте" width="22" height="12">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="http://instagramm.com" class="socials__link">
+              <img class="socials__img" src="img/icon-insta-mobile.svg" alt="Мы в Instagramm" width="17" height="17">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="http://facebook.com" class="socials__link">
+              <img class="socials__img" src="img/icon-fb-mobile.svg" alt="Мы в Facebook" width="10" height="19">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__htmlacademy htmlacademy">
+        <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="htmlacademy__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="htmlacademy__logo-img" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

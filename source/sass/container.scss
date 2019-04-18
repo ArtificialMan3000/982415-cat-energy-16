@@ -1,7 +1,0 @@
-.container {
-  @include ext-paddings();
-}
-
-.container--fix-mobile {
-  width: $mobile-width;
-}
