@@ -2,6 +2,8 @@
   @include list-reset();
   display: flex;
   flex-wrap: wrap;
+  margin-top: 5px;
+  margin-left: -4px;
 }
 
 .socials__item {
@@ -9,7 +11,14 @@
   justify-content: center;
   align-items: center;
   min-width: 40px;
-  margin-right: 35px;
+
+  &--vk {
+    margin-right: 16px;
+  }
+
+  &--inst {
+    margin-right: 13px;
+  }
 }
 
 .socials__item:last-child {

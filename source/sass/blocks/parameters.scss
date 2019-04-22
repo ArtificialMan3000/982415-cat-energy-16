@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 44px;
   background-color: inherit;
 }
 
@@ -12,9 +11,9 @@
   flex-direction: column;
   align-items: center;
   width: 124px;
-  margin-bottom: 38px;
-  padding-top: 17px;
-  padding-bottom: 18px;
+  margin-bottom: 35px;
+  padding-top: 12px;
+  padding-bottom: 17px;
   border: $main-divider #cdcdcd;
   border-radius: 3px;
   background-color: inherit;
@@ -22,7 +21,7 @@
 
 .parameters__name {
   position: absolute;
-  top: calc(100% - 8px);
+  top: calc(100% - 9px);
   width: 87px;
   padding-left: 10px;
   padding-right: 10px;
