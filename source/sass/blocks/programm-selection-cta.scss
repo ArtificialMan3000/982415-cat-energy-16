@@ -7,6 +7,17 @@
   text-align: center;
   color: $white;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-left: 88px + $tablet-external-paddings;
+    padding-top: 49px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 90px + $desktop-external-paddings;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -19,6 +30,11 @@
     background: url("../img/index-background-mobile@1x.jpg") no-repeat center;
     background-color: $brand-color;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+      background: none;
+    }
   }
 }
 
@@ -26,11 +42,22 @@
   margin-bottom: 26px;
   font-size: $title1-font-size;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .programm-selection-cta__lead {
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .programm-selection-cta__img {
@@ -38,10 +65,25 @@
   top: 166px;
   display: block;
   width: 280px;
+  height: 271px;
+
+  @media (min-width: $tablet-width) {
+    top: 251px;
+    left: 29px;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+  }
 }
 
 .programm-selection-cta__button {
   margin-top: 301px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {

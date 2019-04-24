@@ -3,7 +3,9 @@
 }
 //Верхний заголовок на главной странице
 .title--index {
-  color: $white;
+  @media (max-width: $tablet-width - 0.02) {
+    color: $white;
+  }
 }
 
 //Заголовок с декоративной линией
