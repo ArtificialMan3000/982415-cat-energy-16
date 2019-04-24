@@ -6,8 +6,15 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
+    min-height: 860px;
     margin-bottom: 0;
     text-align: left;
+    color: $title-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 576px;
+    margin-bottom: 80px;
   }
 
   &::before {
@@ -110,18 +117,5 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 53px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .programm-selection-cta {
-    min-height: 860px;
-    color: $title-color;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .programm-selection-cta {
-    min-height: 696px;
   }
 }

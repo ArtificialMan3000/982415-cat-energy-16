@@ -13,6 +13,7 @@ body {
   font-weight: 400;
   line-height: $text-line-height;
   color: $text-color;
+  // background-color: red;
 
   @media (min-width: $tablet-width) {
     font-size: $text2-font-size;
