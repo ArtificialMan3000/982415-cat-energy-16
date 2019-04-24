@@ -1,15 +1,12 @@
 .how-it-works {
-  @include ext-paddings();
-  width: $mobile-width;
-  margin: 0 auto;
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    margin-bottom: 101px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    //
   }
 }
 
@@ -17,4 +14,10 @@
   font-size: $title1-font-size;
   line-height: 60px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+    font-size: 60px;
+    width: $tablet-width;
+  }
 }
