@@ -13,24 +13,33 @@
   position: relative;
   display: flex;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     display: block;
     height: 3px;
-    left: 10px;
-    right: -$mobile-external-paddings;
+    left: 2px;
+    right: -9999px;
     top: 0.6em;
     background-color: $brand-color;
     z-index: 0;
+
+    @media (min-width: $tablet-width) {
+      left: -9999px;
+    }
   }
 }
 
 .title__text--line {
   position: relative;
   display: block;
-  flex-shrink: 0;
-  padding-right: 1em;
-  background-color: $white;
+  // flex-shrink: 0;
+  padding-right: 1.1em;
+  background-color: #ffffff;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -1.1em;
+    padding-left: 1.1em;
+  }
 }

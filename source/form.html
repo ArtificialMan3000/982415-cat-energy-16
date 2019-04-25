@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="form-page">
+<div class="site-wrapper">
   <header class="page-header">
     <div class="page-header__row">
       <a href="index.html" class="logo page-header__logo">
@@ -48,7 +49,7 @@
           <fieldset class="programm-selection__group programm-selection__group--cat">
             <div class="programm-selection__group-container container">
               <p class="programm-selection__item programm-selection__item--cat input-item input-item--text">
-                <label class="input-item__label input-item__label--text" for="cat_name">Имя:*</label>
+                <label class="input-item__label input-item__label--text input-item__label--cat-name" for="cat_name">Имя:*</label>
                 <input class="input-item__input input-item__input--text" id="cat_name" name="cat-name" type="text" value="Барсик">
               </p>
               <p class="programm-selection__item programm-selection__item--cat input-item">
@@ -56,35 +57,37 @@
                 <input class="input-item__input input-item__input--text" id="cat_weight" name="cat-weight" type="text" value="7">
               </p>
               <p class="programm-selection__item programm-selection__item--cat input-item">
-                <label class="input-item__label input-item__label--text input-item__label--cat-age" for="cat_age">Возраст (лет):*</label>
+                <label class="input-item__label input-item__label--text input-item__label--cat-age" for="cat_age">Возраст (лет):</label>
                 <input class="input-item__input input-item__input--text" id="cat_age" name="cat-age" type="text" value="7">
               </p>
             </div>
           </fieldset>
           <fieldset class="programm-selection__group programm-selection__group--purpose">
             <div class="programm-selection__group-container container">
-              <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-                <input class="input-item__hidden visually-hidden" type="radio" name="purpose" checked>
-                <div class="input-item__input input-item__input--radio"></div>
-                <span class="input-item__label input-item__label--radio">Похудение</span>
-              </label>
-              <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-                <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
-                <div class="input-item__input input-item__input--radio"></div>
-                <span class="input-item__label input-item__label--radio">Набор массы</span>
-              </label>
-              <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-                <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
-                <div class="input-item__input input-item__input--radio"></div>
-                <span class="input-item__label input-item__label--radio">Не знаю (нужен ваш совет)</span>
-              </label>
+              <div class="programm-selection__border-wrap">
+                <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
+                  <input class="input-item__hidden visually-hidden" type="radio" name="purpose" checked>
+                  <div class="input-item__input input-item__input--radio"></div>
+                  <span class="input-item__label input-item__label--radio">Похудение</span>
+                </label>
+                <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
+                  <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
+                  <div class="input-item__input input-item__input--radio"></div>
+                  <span class="input-item__label input-item__label--radio">Набор массы</span>
+                </label>
+                <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
+                  <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
+                  <div class="input-item__input input-item__input--radio"></div>
+                  <span class="input-item__label input-item__label--radio">Не знаю (нужен ваш совет)</span>
+                </label>
+              </div>
             </div>
           </fieldset>
         </div>
         <div class="container">
           <fieldset class="programm-selection__group programm-selection__group--contacts">
             <legend class="programm-selection__legend title title--line">
-                <span class="title__text--line">Контактные данные<br>(владельца кота)</span>
+                <span class="title__text--line">Контактные данные (владельца кота)</span>
             </legend>
             <p class="programm-selection__item programm-selection__item--contacts input-item input-item--text">
               <label class="input-item__label input-item__label--text input-item__label--owner-email" for="owner_email">E-mail:*</label>
@@ -104,7 +107,7 @@
             </div>
           </fieldset>
           <fieldset class="programm-selection__group programm-selection__group--additional">
-            <legend class="programm-selection__legend title title--line">
+            <legend class="programm-selection__legend programm-selection__legend--additional title title--line">
               <span class="title__text--line">Дополнительно</span>
             </legend>
             <div class="programm-selection__flex-inner">
@@ -157,25 +160,34 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container container">
       <div class="page-footer__logo">
         <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов"  width="128" height="24">
       </div>
       <div class="socials page-footer__socials">
         <ul class="socials__list">
-          <li class="socials__item">
+          <li class="socials__item socials__item--vk">
             <a href="http://vk.com" class="socials__link">
-              <img class="socials__img" src="img/icon-vk-mobile.svg" alt="Мы Вконтакте" width="22" height="12">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-vk.svg">
+                <img class="socials__img socials__img--vk" src="img/icon-vk-mobile.svg" alt="Мы Вконтакте" width="22" height="12">
+              </picture>
             </a>
           </li>
-          <li class="socials__item">
+          <li class="socials__item socials__item--inst">
             <a href="http://instagramm.com" class="socials__link">
-              <img class="socials__img" src="img/icon-insta-mobile.svg" alt="Мы в Instagramm" width="17" height="17">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-insta.svg">
+                <img class="socials__img socials__img--inst" src="img/icon-insta-mobile.svg" alt="Мы в Instagramm" width="17" height="17">
+              </picture>
             </a>
           </li>
-          <li class="socials__item">
+          <li class="socials__item socials__item--fb">
             <a href="http://facebook.com" class="socials__link">
-              <img class="socials__img" src="img/icon-fb-mobile.svg" alt="Мы в Facebook" width="10" height="19">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-fb.svg">
+                <img class="socials__img socials__img--fb" src="img/icon-fb-mobile.svg" alt="Мы в Facebook" width="10" height="19">
+              </picture>
             </a>
           </li>
         </ul>
@@ -188,5 +200,6 @@
       </div>
     </div>
   </footer>
+</div>
 </body>
 </html>
