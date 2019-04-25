@@ -1,12 +1,17 @@
 .programm-selection__lead {
   @include title();
   margin-bottom: 39px;
+  padding-right: 40px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+  }
 }
 
 .programm-selection__form {
-  padding-bottom: 34px;
+  padding-bottom: 31px;
 }
 
 .programm-selection__cat-purpose-container {
@@ -32,8 +37,8 @@
 
   &--purpose {
     padding-top: 21px;
-    padding-bottom: 22px;
-    margin-bottom: 31px;
+    padding-bottom: 19px;
+    margin-bottom: 28px;
     border-bottom: $main-divider #ededed;
 
     @media (min-width: $desktop-width) {
@@ -42,15 +47,15 @@
   }
 
   &--contacts {
-    margin-bottom: 31px;
+    margin-bottom: 28px;
   }
 
   &--comment {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 
   &--additional {
-    margin-bottom: 34px;
+    margin-bottom: 33px;
   }
 }
 
@@ -93,7 +98,7 @@
 .programm-selection__legend {
   float: left;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   font-size: $title2-font-size;
   line-height: 24px;
 
@@ -104,7 +109,9 @@
 
 .programm-selection__button {
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  font-size: $text2-font-size;
+  line-height: 20px;
 }
 
 .programm-selection__note {

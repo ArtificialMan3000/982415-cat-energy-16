@@ -9,11 +9,27 @@
 
 .input-item__label {
   flex-shrink: 0;
-  margin-right: 16px;
+  margin-right: 13px;
   color: #222222;
+
+  &--cat-weight {
+    margin-right: 16px;
+  }
+
+  &--cat-age {
+    margin-right: 9px;
+  }
 
   &--radio {
     margin-right: 0;
+  }
+
+  &--owner-email {
+    margin-right: 11px;
+  }
+
+  &--owner-phone {
+    margin-right: 9px;
   }
 }
 
@@ -23,14 +39,14 @@
   line-height: inherit;
   text-transform: inherit;
   color: $text-color;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e6e6e6;
 
   &--text {
     flex-grow: 1;
     width: 0;
     height: 45px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -47,13 +63,28 @@
     }
   }
 
+  &--email {
+    background-position: center right 15px;
+    background-repeat: no-repeat;
+    background-size: 17px 13px;
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  &--phone {
+    background-position: center right 12px;
+    background-repeat: no-repeat;
+    background-size: 20px 21px;
+    background-image: url("../img/icon-phone.svg");
+  }
+
   &--checkbox {
     width: 30px;
     height: 30px;
     margin-right: 16px;
+    border-color: #cfcfcf;
 
     .input-item__hidden:checked + & {
-      background-size: 22px 17px;
+      background-size: 21.1px 15.5px;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url("../img/icon-tick.svg");
