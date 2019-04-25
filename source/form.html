@@ -89,14 +89,16 @@
             <legend class="programm-selection__legend title title--line">
                 <span class="title__text--line">Контактные данные (владельца кота)</span>
             </legend>
-            <p class="programm-selection__item programm-selection__item--contacts input-item input-item--text">
-              <label class="input-item__label input-item__label--text input-item__label--owner-email" for="owner_email">E-mail:*</label>
-              <input class="input-item__input input-item__input--text input-item__input--email" id="owner_email" name="owner-email" type="email" value="kuklachev@gmail.com">
-            </p>
-            <p class="programm-selection__item programm-selection__item--contacts input-item input-item--text">
-              <label class="input-item__label input-item__label--text input-item__label--owner-phone" for="owner_phone">Телефон:*</label>
-              <input class="input-item__input input-item__input--text input-item__input--phone" id="owner_phone" name="owner-phone" type="tel" value="8 (960) 900-60-90">
-            </p>
+            <div class="programm-selection__flex-inner--contacts">
+              <p class="programm-selection__item programm-selection__item--contacts input-item input-item--text">
+                <label class="input-item__label input-item__label--text input-item__label--owner-email" for="owner_email">E-mail:*</label>
+                <input class="input-item__input input-item__input--text input-item__input--email" id="owner_email" name="owner-email" type="email" value="kuklachev@gmail.com">
+              </p>
+              <p class="programm-selection__item programm-selection__item--contacts input-item input-item--text">
+                <label class="input-item__label input-item__label--text input-item__label--owner-phone" for="owner_phone">Телефон:*</label>
+                <input class="input-item__input input-item__input--text input-item__input--phone" id="owner_phone" name="owner-phone" type="tel" value="8 (960) 900-60-90">
+              </p>
+            </div>
           </fieldset>
           <fieldset class="programm-selection__group programm-selection__group--comment">
             <legend class="programm-selection__legend title title--line">
@@ -110,7 +112,7 @@
             <legend class="programm-selection__legend programm-selection__legend--additional title title--line">
               <span class="title__text--line">Дополнительно</span>
             </legend>
-            <div class="programm-selection__flex-inner">
+            <div class="programm-selection__flex-inner--additional">
               <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
                 <input class="input-item__hidden visually-hidden" type="checkbox" name="sweetener" checked>
                 <div class="input-item__input input-item__input--checkbox"></div>

@@ -49,6 +49,10 @@
     @media (min-width: $tablet-width) {
       margin-right: 19px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 21px;
+    }
   }
 
   &--owner-phone {
@@ -56,6 +60,10 @@
 
     @media (min-width: $tablet-width) {
       margin-right: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 14px;
     }
   }
 }
@@ -94,7 +102,9 @@
     height: 30px;
     margin-right: 16px;
     border-radius: 50%;
+    border-color: #cdcdcd;
     box-shadow: inset 0 0 0 8px #ffffff;
+    background-clip: padding-box;
 
     @media (min-width: $tablet-width) {
       width: 40px;

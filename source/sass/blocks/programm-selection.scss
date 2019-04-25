@@ -19,6 +19,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .programm-selection__cat-purpose-container {
@@ -45,6 +49,7 @@
 
     @media (min-width: $desktop-width) {
       width: 570px;
+      margin-bottom: 68px;
     }
   }
 
@@ -63,6 +68,7 @@
 
     @media (min-width: $desktop-width) {
       width: 570px;
+      margin-bottom: 68px;
     }
   }
 
@@ -72,6 +78,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 64px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 66px;
+    }
   }
 
   &--comment {
@@ -80,6 +90,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 64px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 66px;
+    }
   }
 
   &--additional {
@@ -87,6 +101,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
     }
   }
 }
@@ -108,11 +126,27 @@
 }
 
 .programm-selection__flex-inner {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -$tablet-external-paddings;
-    margin-right: -$tablet-external-paddings;
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -$desktop-external-paddings;
+      margin-right: -$desktop-external-paddings;
+    }
+  }
+
+  &--additional {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -$tablet-external-paddings;
+      margin-right: -$tablet-external-paddings;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -$desktop-external-paddings;
+      margin-right: -$desktop-external-paddings;
+    }
   }
 }
 
@@ -137,6 +171,13 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+      margin-left: $desktop-external-paddings;
+      margin-right: $desktop-external-paddings;
+      margin-bottom: 0;
+    }
   }
 
   &--additional {
@@ -147,6 +188,13 @@
       margin-left: $tablet-external-paddings;
       margin-right: $tablet-external-paddings;
       margin-bottom: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+      margin-left: $desktop-external-paddings;
+      margin-right: $desktop-external-paddings;
+      margin-bottom: 0;
     }
 
     &:nth-last-child(-n+2) {
@@ -200,6 +248,11 @@
     margin-bottom: 0;
     font-size: 20px;
     vertical-align: middle;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-right: ($desktop-external-paddings * 2) - 3px;
   }
 }
 
