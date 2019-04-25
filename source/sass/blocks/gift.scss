@@ -1,7 +1,7 @@
 .gift {
   position: relative;
   min-height: 289px;
-  padding-top: 190px;
+  padding-top: 186px;
   padding-left: 55px;
   padding-right: 55px;
   background: $brand-color url("../img/gift-photo-mobile@1x.jpg") no-repeat top center;
@@ -20,6 +20,7 @@
 }
 
 .gift__text {
+  margin: 0;
   font-size: $title3-font-size;
   line-height: 20px;
   text-align: center;

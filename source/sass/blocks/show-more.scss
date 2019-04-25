@@ -1,7 +1,30 @@
 .show-more {
-  padding-top: 27px;
-  padding-bottom: 25px;
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 24px;
   text-align: center;
+  border-bottom: $main-divider #ededed;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -$mobile-external-paddings;
+    right: -$mobile-external-paddings;
+    bottom: -1px;
+    display: block;
+    height: 1px;
+    background-color: #ededed;
+
+    @media (min-width: $tablet-width) {
+      left: -$tablet-external-paddings;
+      right: -$tablet-external-paddings;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -$desktop-external-paddings;
+      right: -$desktop-external-paddings;
+    }
+  }
 }
 
 .show-more__button-plus {
@@ -9,7 +32,7 @@
   width: 31px;
   height: 31px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   background: url("../img/icon-plus-mobile.svg");
   opacity: 0.2;
 }
@@ -18,11 +41,12 @@
   font-size: $title3-font-size;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
 }
 
 .show-more__lead {
-  margin-bottom: 22px;
+  margin: 0;
+  margin-bottom: 21px;
   font-size: $small-font-size;
   line-height: 16px;
 }

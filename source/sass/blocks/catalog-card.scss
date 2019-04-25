@@ -1,10 +1,43 @@
 .catalog-card {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 24px;
+  border-bottom: $main-divider #ededed;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -$mobile-external-paddings;
+    right: -$mobile-external-paddings;
+    bottom: -1px;
+    display: block;
+    height: 1px;
+    background-color: #ededed;
+
+    @media (min-width: $tablet-width) {
+      left: -$tablet-external-paddings;
+      right: -$tablet-external-paddings;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -$desktop-external-paddings;
+      right: -$desktop-external-paddings;
+    }
+  }
 }
 
 .catalog-card__desc {
   width: 50%;
+  padding-top: 22px;
 }
 
 .catalog-card__properties {
@@ -13,8 +46,8 @@
 }
 
 .catalog-card__title {
-  width: 72px;
-  margin-bottom: 18px;
+  width: 75px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   font-size: $title3-font-size;
   line-height: 20px;
