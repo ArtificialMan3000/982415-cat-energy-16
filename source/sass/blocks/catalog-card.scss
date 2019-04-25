@@ -2,11 +2,17 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 24px;
-  border-bottom: $main-divider #ededed;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    display: block;
     width: 324px;
+    margin-top: 140px;
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-top: 164px;
+    padding-bottom: 40px;
+    background-color: $gray-light;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,8 +30,7 @@
     background-color: #ededed;
 
     @media (min-width: $tablet-width) {
-      left: -$tablet-external-paddings;
-      right: -$tablet-external-paddings;
+      display: none;
     }
 
     @media (min-width: $desktop-width) {
@@ -35,14 +40,51 @@
   }
 }
 
+.catalog-card__img-link {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -82px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    height: 208px;
+  }
+}
+
+.catalog-card__img {
+  display: block;
+  width: 140px;
+  height: 144px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: auto;
+    max-height: 208px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
 .catalog-card__desc {
   width: 50%;
   padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 33px;
+    padding-top: 0;
+  }
 }
 
-.catalog-card__properties {
-  font-size: $small-font-size;
-  line-height: 16px;
+.catalog-card__title-link {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .catalog-card__title {
@@ -51,15 +93,38 @@
   text-transform: uppercase;
   font-size: $title3-font-size;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.catalog-card__properties {
+  font-size: $small-font-size;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text2-font-size;
+  }
 }
 
 .catalog-card__prop-item {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border-bottom: $main-divider #cdcdcd;
+  }
 }
 
 .catalog-card__button {
   width: 100%;
+  min-height: 40px;
   font-size: 16px;
   line-height: 20px;
 }
