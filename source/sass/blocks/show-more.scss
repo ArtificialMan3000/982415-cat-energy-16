@@ -6,12 +6,16 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    margin-top: 140px;
+    margin-top: 142px;
     padding-top: 54px;
     padding-bottom: 39px;
     padding-left: 37px;
     padding-right: 36px;
     border: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 
   &::before {
@@ -64,6 +68,11 @@
     padding-right: 40px;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .show-more__lead {
@@ -78,6 +87,11 @@
     padding-right: 40px;
     font-size: $text2-font-size;
     line-height: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
