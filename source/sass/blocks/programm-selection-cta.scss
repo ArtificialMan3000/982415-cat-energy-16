@@ -30,6 +30,10 @@
     background-color: $brand-color-dark;
     z-index: -1;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 0.02) {
       display: none;
       background: none;
@@ -42,6 +46,10 @@
       height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: top right;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
