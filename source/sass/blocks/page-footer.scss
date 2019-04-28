@@ -1,11 +1,16 @@
 .page-footer {
   background-color: $gray-light;
+
+  @media (min-width: $tablet-width) {
+    //margin-top: 570px; //Временно для PP
+  }
 }
 
 .page-footer__container {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    min-height: 150px;
   }
 }
 
@@ -14,7 +19,15 @@
   justify-content: center;
   align-items: center;
   min-height: 95px;
+  padding-bottom: 4px;
   border-bottom: $main-divider #d9d9d9;
+}
+
+.page-footer__logo-img {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin-top: 11px;
 }
 
 .page-footer__socials {
@@ -23,6 +36,10 @@
   align-items: center;
   min-height: 63px;
   border-bottom: $main-divider #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 31px;
+  }
 }
 
 .page-footer__htmlacademy {

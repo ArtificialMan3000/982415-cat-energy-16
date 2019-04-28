@@ -1,6 +1,29 @@
 .page-title {
-  margin-top: 31px;
-  margin-bottom: 35px;
+  margin-top: 14px;
+  margin-bottom: 29px;
   font-size: $title1-font-size;
   line-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 49px;
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+  }
+
+  .form-page & {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -41px;
+      margin-bottom: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+      margin-top: 67px;
+    }
+  }
 }

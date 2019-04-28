@@ -12,11 +12,17 @@ body {
   font-size: $text-font-size;
   font-weight: 400;
   line-height: $text-line-height;
-  color: #464646;
+  color: $text-color;
+  // background-color: red;
+
+  @media (min-width: $tablet-width) {
+    font-size: $text2-font-size;
+    line-height: $text2-line-height;
+  }
 }
 
-.inner-page .main {
-  font-weight: 500;
+.site-wrapper {
+  overflow: hidden;
 }
 
 a {

@@ -1,9 +1,9 @@
 .additional {
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 }
 
 .additional__title {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
 }
@@ -16,7 +16,8 @@
 
 .additional__list {
   @include list-reset();
-  border-top: $main-divider #ededed;
+  margin-bottom: 39px;
+  border-top: $main-divider #cdcdcd;
 
   @media (min-width: $desktop-width) {
     width: 895px;

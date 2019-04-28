@@ -9,8 +9,8 @@
 .contacts__overlayer {
   display: flex;
   justify-content: space-between;
-  padding-top: 31px;
-  padding-bottom: 36px;
+  padding-top: 28px;
+  padding-bottom: 26px;
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -31,4 +31,11 @@
 .contacts__address {
   font-style: normal;
   line-height: 20px;
+}
+
+.contacts__map-img {
+  display: block;
+  width: 320px;
+  height: 362px;
+  margin: 0 auto;
 }

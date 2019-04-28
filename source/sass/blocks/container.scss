@@ -1,5 +1,12 @@
 .container {
   @include container();
+
+  .form-page & {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 0.02) {
+      padding-left: $tablet-external-paddings + 40px;
+      padding-right: $tablet-external-paddings + 37px;
+    }
+  }
 }
 
 .container--desktop {

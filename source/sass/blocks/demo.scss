@@ -1,15 +1,16 @@
 .demo {
-  padding-bottom: 39px;
+  padding-bottom: 36px;
   background-color: $gray-light;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 0.02px) {
+    border-top: $main-divider #e6e6e6;
     background-color: initial;
   }
 }
 
 .demo__title {
-  margin-bottom: 33px;
-  padding-top: 33px;
+  margin-bottom: 23px;
+  padding-top: 18px;
   font-size: $title1-font-size;
   line-height: 60px;
 
@@ -19,12 +20,15 @@
 }
 
 .demo__container-desktop {
+  background-color: inherit;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
 }
 
 .demo__desc {
+  margin-bottom: 33px;
   background-color: inherit;
 
   @media (min-width: $desktop-width) {
@@ -35,8 +39,14 @@
 }
 
 .demo__text {
-  margin-bottom: 27px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-right: 6px;
   line-height: 18px;
+}
+
+.demo__parameters {
+  margin: 0;
 }
 
 .demo__interactive-bg-wrap {
@@ -46,6 +56,8 @@
 }
 
 .demo__interactive {
+  padding: 0;
+
   @media (min-width: $desktop-width) {
     @include container-reset();
     width: 570px;

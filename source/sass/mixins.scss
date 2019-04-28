@@ -48,6 +48,16 @@
     width: $desktop-width;
   }
 }
+//Центровщик только для планшетной ширины
+@mixin container-tablet() {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: $tablet-external-paddings;
+    padding-right: $tablet-external-paddings;
+  }
+}
 //Центровщик только для десктопной ширины
 @mixin container-desktop() {
   @media (min-width: $desktop-width) {
