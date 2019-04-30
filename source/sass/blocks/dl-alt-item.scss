@@ -3,13 +3,30 @@
   margin: 0 auto;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    padding-top: 12px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
 }
 
 .dl-alt-item__name {
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 8px;
+  }
 }
 
 .dl-alt-item__value {
   display: inline-block;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

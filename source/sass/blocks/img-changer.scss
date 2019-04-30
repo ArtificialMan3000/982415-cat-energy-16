@@ -1,18 +1,53 @@
-.img-changer__img-wrap {
+.img-changer__images-container {
   position: relative;
-  height: 240px;
+  min-height: 240px;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    min-height: 517px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.img-changer__img-resizer {
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    left: 7px;
+    width: 49%;
+    overflow: hidden;
+  }
+
+  &--before {
+    z-index: 2;
+  }
+
+  &--after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: flex-end;
+      left: calc(49% + 7px);
+      width: calc(100% - 49%);
+      z-index: 1;
+    }
+  }
 }
 
 .img-changer__img {
-  position: absolute;
   display: block;
   width: 320px;
   height: 240px;
-}
 
-.img-changer__img--after {
-  display: none;
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    max-width: none;
+    height: 517px;
+  }
 }
 
 .img-changer__control {
@@ -21,9 +56,14 @@
   justify-content: center;
   align-items: center;
   margin-left: 5px;
-  font-size: 16px;
+  font-size: $title3-font-size;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    font-size: 20px;
+  }
 }
 
 .img-changer__line-outer {
@@ -34,11 +74,61 @@
   padding: 3px 6px;
   border: $main-divider #cdcdcd;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    margin-left: 22px;
+    margin-right: 22px;
+    padding: 0;
+    border: none;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+  }
 }
 
 .img-changer__line-inner {
-  width: 50%;
+  position: relative;
+  width: 51%;
   height: 100%;
   background-color: $brand-color;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.img-changer__handler {
+  position: absolute;
+  top: -14px;
+  right: 0;
+  transform: translateX(45.5%);
+  display: block;
+  padding: 1px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 12px #ffffff,
+    0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  background-color: $brand-color;
+  background-clip: content-box;
+}
+
+.img-changer__label {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(100% + 5px);
+      display: block;
+      width: calc(100% - 2px);
+      height: 1px;
+      border-bottom: 1px dotted #bebebe;
+    }
+  }
 }

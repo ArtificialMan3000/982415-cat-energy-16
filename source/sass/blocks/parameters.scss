@@ -3,6 +3,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .parameters__item {
@@ -17,12 +21,20 @@
   border: $main-divider #cdcdcd;
   border-radius: 3px;
   background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    margin-right: 42px;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
 }
 
 .parameters__name {
   position: absolute;
   top: calc(100% - 9px);
-  width: 87px;
+  max-width: 90px;
   padding-left: 10px;
   padding-right: 10px;
   font-size: $small-font-size;
@@ -31,6 +43,15 @@
   text-align: center;
   order: 2;
   background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    top: calc(100% - 7px);
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .parameters__value {
@@ -39,4 +60,9 @@
   line-height: 24px;
   text-transform: uppercase;
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }

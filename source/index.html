@@ -117,16 +117,30 @@
         </div>
         <div class="demo__interactive-bg-wrap">
           <div class="demo__interactive img-changer container">
-            <div class="img-changer__img-wrap">
-              <img class="img-changer__img img-changer__img--before" src="img/before-mobile@1x.png" alt="Толстый кот" width="320" height="240">
-              <img class="img-changer__img img-changer__img--after" src="img/after-mobile@1x.png" alt="Тонкий кот" width="320" height="240">
+            <div class="img-changer__images-container">
+              <div class="img-changer__img-resizer img-changer__img-resizer--before">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="img-changer__img img-changer__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот" width="320" height="240">
+                </picture>
+              </div>
+              <div class="img-changer__img-resizer img-changer__img-resizer--after">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="img-changer__img img-changer__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Тонкий кот" width="320" height="240">
+                </picture>
+              </div>
             </div>
             <div class="img-changer__control">
-              <span class="img-changer__from">Было</span>
+              <span class="img-changer__label img-changer__label--from">Было</span>
               <div class="img-changer__line-outer">
-                <div class="img-changer__line-inner"></div>
+                <div class="img-changer__line-inner">
+                  <div class="img-changer__handler"></div>
+                </div>
               </div>
-              <span class="img-changer__to">Стало</span>
+              <span class="img-changer__label img-changer__label--to">Стало</span>
             </div>
           </div>
         </div>
