@@ -2,9 +2,13 @@
   padding-bottom: 36px;
   background-color: $gray-light;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 0.02px) {
-    border-top: $main-divider #e6e6e6;
-    background-color: #ffffff;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background-color: initial;
+
+    @media (max-width: $desktop-width - 0.02px) {
+      border-top: $main-divider #e6e6e6;
+    }
   }
 }
 
@@ -19,15 +23,9 @@
     padding-top: 42px;
     font-size: 60px;
   }
-
-  @media (min-width: $desktop-width) {
-    background-color: #ffffff;
-  }
 }
 
 .demo__container-desktop {
-  background-color: inherit;
-
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -35,10 +33,9 @@
 
 .demo__desc {
   margin-bottom: 33px;
-  background-color: inherit;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 255px;
+    margin-bottom: 86px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,22 +61,30 @@
   margin: 0;
 }
 
-.demo__interactive-bg-wrap {
-  @media (min-width: $tablet-width) {
-    background-color: $gray-light;
-  }
-}
-
 .demo__interactive {
+  position: relative;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    top: -169px;
+    padding-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
     @include container-reset();
     width: 570px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 169px;
+      bottom: 0;
+      left: -9999px;
+      right: -9999px;
+      display: block;
+      background-color: $gray-light;
+      z-index: -1;
+    }
   }
 }
