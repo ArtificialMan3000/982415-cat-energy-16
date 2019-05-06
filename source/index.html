@@ -155,14 +155,19 @@
           </p>
           <address class="contacts__address">
               ул. Большая Конюшенная, д. 19/8
-              Санкт-Петербург
+              <span class="contacts__city">Санкт-Петербург</span>
           </address>
         </div>
       </div>
       <div class="contacts__map">
         <h2 class="visually-hidden">Карта проезда</h2>
-        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCRZiByk" width="400" height="400" allowfullscreen="true"></iframe> -->
-        <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" alt="Наш адрес - ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" class="map__img" width="320" height="400">
+        <div id="map" class="contacts__map-interactive"></div>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Наш адрес - ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
+        </picture>
+        <img class="contacts__map-pin" src="img/map-pin.png" srcset="img/map-pin.png">
       </div>
     </section>
   </main>
@@ -208,5 +213,7 @@
     </div>
   </footer>
 </div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=cdd788e9-fb0b-4f1b-8096-92674e52bed3" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
