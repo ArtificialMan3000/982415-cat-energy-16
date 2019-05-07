@@ -17,6 +17,13 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-top: 142px;
+  }
+
+  &:nth-child(-n + 4) {
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
   }
 
   &::before {

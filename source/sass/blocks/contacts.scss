@@ -28,6 +28,13 @@
     background-color: #ffffff;
     z-index: 4;
   }
+
+  .form-page & {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 0.02px) {
+      padding-left: 1px;
+      padding-right: 5px;
+    }
+  }
 }
 
 .contacts__title {

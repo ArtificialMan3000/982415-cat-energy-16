@@ -42,6 +42,10 @@
     padding-left: 1em;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-left: -1em;
+  }
+
   .form-page & {
     padding-right: 1.1em;
 
