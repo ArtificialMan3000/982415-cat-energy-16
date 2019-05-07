@@ -1,5 +1,18 @@
 .htmlacademy {
   justify-content: space-between;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .htmlacademy__logo-img,
+  &:focus .htmlacademy__logo-img {
+    fill: #68b738;
+  }
+
+  &:active .htmlacademy__logo-img {
+    fill: #68b738;
+  }
 }
 
 .htmlacademy__link {
