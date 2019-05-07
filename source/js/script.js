@@ -1,3 +1,24 @@
+var menu = document.querySelector(".main-nav");
+var menuButton = document.querySelector(".page-header__burger");
+
+menu.classList.remove("main-nav--show");
+
+menuButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  menu.classList.toggle("main-nav--show");
+});
+
+
+
+
+
+
+
+
+
+
+
+
 ymaps.ready(function () {
   document.querySelector('.contacts__map-img').getElementsByClassName.display = 'none';
   var mapCenter = [59.938850, 30.323100];
