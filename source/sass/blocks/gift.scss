@@ -4,7 +4,15 @@
   padding-top: 186px;
   padding-left: 55px;
   padding-right: 55px;
-  background: $brand-color url("../img/gift-photo-mobile@1x.jpg") no-repeat top center;
+  background: $brand-color-dark url("../img/gift-photo-mobile@1x.jpg") no-repeat top center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    padding-top: 71px;
+    padding-left: 423px;
+    padding-right: 100px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
 }
 
 .gift::before {
@@ -17,6 +25,12 @@
   height: 61px;
   margin: 0 auto;
   background: url("../img/icon-gift.svg") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    left: 91px;
+    right: auto;
+    margin: 0;
+  }
 }
 
 .gift__text {
@@ -25,4 +39,8 @@
   line-height: 20px;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }

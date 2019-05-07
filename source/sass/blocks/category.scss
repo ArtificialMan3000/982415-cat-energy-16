@@ -1,8 +1,8 @@
 .category {
   margin-bottom: 20px;
   padding: 20px;
-  padding-top: 30px;
-  padding-bottom: 18px;
+  padding-top: 29px;
+  padding-bottom: 19px;
   background-color: $gray-light;
 
   &:last-child {
@@ -35,7 +35,7 @@
 
 .category__title {
   position: relative;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   padding-left: 71px;
   font-size: $title2-font-size;
   line-height: 37px;
@@ -58,7 +58,7 @@
   content: "";
   position: absolute;
   left: 2px;
-  top: -6px;
+  top: -5px;
   width: 50px;
   height: 50px;
   background-color: $brand-color;
@@ -168,10 +168,14 @@
   content: "";
   position: absolute;
   display: block;
-  right: -48px;
+  right: -36px;
   top: 50%;
   width: 25px;
-  height: 12px;
+  height: 13px;
   margin-top: -6px;
   background: url("../img/icon-right-arrow-long.svg") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    right: -48px;
+  }
 }

@@ -3,6 +3,7 @@
   border-top: $main-divider #ededed;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
     border: none;
   }
 }
