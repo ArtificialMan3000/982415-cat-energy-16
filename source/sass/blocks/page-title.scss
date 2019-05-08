@@ -6,11 +6,13 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 49px;
+    margin-bottom: 26px;
     font-size: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 65px;
+    margin-top: 67px;
+    margin-bottom: 166px;
   }
 
   .form-page & {

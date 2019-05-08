@@ -7,7 +7,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     width: 324px;
-    margin-top: 142px;
+    margin-top: 140px;
     padding-left: 38px;
     padding-right: 38px;
     padding-top: 164px;
@@ -17,6 +17,13 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-top: 142px;
+  }
+
+  &:nth-child(-n + 4) {
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
   }
 
   &::before {

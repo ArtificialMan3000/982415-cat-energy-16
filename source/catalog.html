@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="catalog-page">
+<div class="site-wrapper">
   <header class="page-header">
     <div class="page-header__row">
       <a href="index.html" class="logo page-header__logo">
@@ -18,7 +19,7 @@
       </a>
       <button class="page-header__burger burger" type="button"></button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--show">
       <ul class="main-nav__list site-menu">
         <li class="site-menu__item">
           <a href="index.html" class="site-menu__link">Главная</a>
@@ -301,33 +302,38 @@
           </p>
         </div>
       </div>
-  </section>
-  <section class="contacts contacts--inner-page">
-    <div class="container">
-      <div class="contacts__overlayer">
-        <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
-        <p class="contacts__title title">Приглашаем
-            к&nbsp;сотрудничеству
-            дилеров!
-        </p>
-        <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8
-            Санкт-Петербург
-        </address>
+    </section>
+    <section class="contacts contacts--inner-page">
+      <div class="container">
+        <div class="contacts__overlayer">
+          <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
+          <p class="contacts__title title">Приглашаем
+              к&nbsp;сотрудничеству
+              дилеров!
+          </p>
+          <address class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8
+              <span class="contacts__city">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
-    </div>
-    <div class="contacts__map">
-      <h2 class="visually-hidden">Карта проезда</h2>
-      <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCRZiByk" width="400" height="400" allowfullscreen="true"></iframe> -->
-      <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" alt="Наш адрес - ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" class="map__img" width="320" height="400">
-    </div>
-  </section>
+      <div class="contacts__map">
+        <h2 class="visually-hidden">Карта проезда</h2>
+        <div id="map" class="contacts__map-interactive"></div>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Наш адрес - ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
+        </picture>
+        <img class="contacts__map-pin" src="img/map-pin.png" srcset="img/map-pin.png">
+      </div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container container">
-      <div class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Cat Energy - функциональное питание для котов"  width="128" height="24">
-      </div>
+      </a>
       <div class="socials page-footer__socials">
         <ul class="socials__list">
           <li class="socials__item socials__item--vk">
@@ -359,10 +365,15 @@
       <div class="page-footer__htmlacademy htmlacademy">
         <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="htmlacademy__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="htmlacademy__logo-img" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+          <svg class="htmlacademy__logo-img" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09" fill="#666666">
+            <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+          </svg>
         </a>
       </div>
     </div>
   </footer>
+</div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=cdd788e9-fb0b-4f1b-8096-92674e52bed3" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

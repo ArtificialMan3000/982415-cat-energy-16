@@ -55,6 +55,15 @@
       color: #ffffff;
     }
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-menu__item--current .site-menu__link::before {

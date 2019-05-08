@@ -226,12 +226,10 @@
     line-height: 36px;
   }
 
-  &.title--line::before {
-    top: 0.65em;
-  }
-
   &--additional {
-    margin-bottom: 58px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 58px;
+    }
   }
 }
 
