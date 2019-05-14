@@ -1,4 +1,6 @@
 .container {
+  display: block;
+
   @include container();
 
   .form-page & {
