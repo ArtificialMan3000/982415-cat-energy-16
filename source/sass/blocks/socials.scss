@@ -33,10 +33,24 @@
   }
 }
 
+.socials__link {
+  &:hover .socials__img,
+  &:focus .socials__img {
+    fill: $brand-color;
+  }
+
+  &:active .socials__img {
+    opacity: 0.3;
+  }
+}
+
 .socials__img {
+  fill: #666666;
+
   &--vk {
     width: 22px;
     height: 12px;
+    // fill: green;
 
     @media (min-width: $tablet-width) {
       width: 30px;
@@ -64,3 +78,7 @@
     }
   }
 }
+
+// .socials__img--vk {
+//   fill: green;
+// }
