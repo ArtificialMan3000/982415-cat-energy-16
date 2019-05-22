@@ -8,6 +8,12 @@
   background-position: center;
   background-image: url("../img/icon-mobile-menu.svg");
   cursor: pointer;
+
+  &--close {
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/icon-close.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {

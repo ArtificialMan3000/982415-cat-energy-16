@@ -5,6 +5,7 @@ menu.classList.remove("main-nav--show");
 
 menuButton.addEventListener("click", function (evt) {
   evt.preventDefault();
+  menuButton.classList.toggle("burger--close");
   menu.classList.toggle("main-nav--show");
 });
 

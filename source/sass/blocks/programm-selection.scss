@@ -97,14 +97,14 @@
   }
 
   &--additional {
-    margin-bottom: 33px;
+    margin-bottom: 41px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 65px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 61px;
+      margin-bottom: 72px;
     }
   }
 }
@@ -116,9 +116,12 @@
 }
 
 .programm-selection__border-wrap {
+  padding-top: 6px;
+  padding-bottom: 6px;
+
   @media (min-width: $tablet-width) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 34px;
+    padding-bottom: 34px;
     padding-left: 27px;
     padding-right: 27px;
     border: 1px solid #e6e6e6;
@@ -162,7 +165,11 @@
   }
 
   &--purpose {
-    margin-bottom: 13px;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 33px;
+    }
   }
 
   &--contacts {
@@ -181,13 +188,13 @@
   }
 
   &--additional {
-    margin-bottom: 13px;
+    margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       width: 284px;
       margin-left: $tablet-external-paddings;
       margin-right: $tablet-external-paddings;
-      margin-bottom: 32px;
+      margin-bottom: 52px;
     }
 
     @media (min-width: $desktop-width) {
@@ -211,7 +218,7 @@
 
 .programm-selection__legend {
   float: left;
-  width: 100%;
+  // width: 100%;
   margin-bottom: 34px;
   font-size: $title2-font-size;
   line-height: 24px;
@@ -227,8 +234,10 @@
   }
 
   &--additional {
+    margin-bottom: 41px;
+
     @media (min-width: $tablet-width) {
-      margin-bottom: 58px;
+      margin-bottom: 67px;
     }
   }
 }

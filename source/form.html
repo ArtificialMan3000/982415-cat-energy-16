@@ -49,7 +49,7 @@
         </p>
       </div>
       <form class="programm-selection__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-        <div class="programm-selection__cat-purpose-container container--desktop">
+        <div class="programm-selection__cat-purpose-container container-desktop">
           <fieldset class="programm-selection__group programm-selection__group--cat">
             <div class="programm-selection__group-container container">
               <p class="programm-selection__item programm-selection__item--cat input-item input-item--text">
@@ -69,21 +69,18 @@
           <fieldset class="programm-selection__group programm-selection__group--purpose">
             <div class="programm-selection__group-container container">
               <div class="programm-selection__border-wrap">
-                <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-                  <input class="input-item__hidden visually-hidden" type="radio" name="purpose" checked>
-                  <div class="input-item__input input-item__input--radio"></div>
-                  <span class="input-item__label input-item__label--radio">Похудение</span>
-                </label>
-                <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-                  <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
-                  <div class="input-item__input input-item__input--radio"></div>
-                  <span class="input-item__label input-item__label--radio">Набор массы</span>
-                </label>
-                <label class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-                  <input class="input-item__hidden visually-hidden" type="radio" name="purpose">
-                  <div class="input-item__input input-item__input--radio"></div>
-                  <span class="input-item__label input-item__label--radio">Не знаю (нужен ваш совет)</span>
-                </label>
+                <p class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
+                  <input class="input-item__hidden visually-hidden" id="purpose-slim" type="radio" name="purpose" checked>
+                  <label class="input-item__label input-item__label--radio" for="purpose-slim">Похудение</label>
+                </p>
+                <p class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
+                  <input class="input-item__hidden visually-hidden" id="purpose-mass" type="radio" name="purpose">
+                  <label class="input-item__label input-item__label--radio" for="purpose-mass">Набор массы</label>
+                </p>
+                <p class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
+                  <input class="input-item__hidden visually-hidden" id="purpose-unknown" type="radio" name="purpose">
+                  <label class="input-item__label input-item__label--radio" for="purpose-unknown">Не знаю (нужен ваш совет)</label>
+                </p>
               </div>
             </div>
           </fieldset>
@@ -91,9 +88,9 @@
         <div class="container">
           <fieldset class="programm-selection__group programm-selection__group--contacts">
             <legend class="programm-selection__legend title title--line">
-                <span class="title__text--line">Контактные данные (владельца кота)</span>
+                Контактные данные <br class="title__br title__br--line">(владельца кота)
             </legend>
-            <div class="programm-selection__flex-inner--contacts">
+            <div class="programm-selection__flex-inner programm-selection__flex-inner--contacts">
               <p class="programm-selection__item programm-selection__item--contacts input-item input-item--text">
                 <label class="input-item__label input-item__label--text input-item__label--owner-email" for="owner_email">E-mail:*</label>
                 <input class="input-item__input input-item__input--text input-item__input--email" id="owner_email" name="owner-email" type="email" value="kuklachev@gmail.com">
@@ -106,7 +103,7 @@
           </fieldset>
           <fieldset class="programm-selection__group programm-selection__group--comment">
             <legend class="programm-selection__legend title title--line">
-              <span class="title__text--line">Комментарий</span>
+              Комментарий
             </legend>
             <div class="programm-selection__item input-item input-item--textarea">
               <textarea class="input-item__input input-item__input--textarea" name="comment" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -114,29 +111,25 @@
           </fieldset>
           <fieldset class="programm-selection__group programm-selection__group--additional">
             <legend class="programm-selection__legend programm-selection__legend--additional title title--line">
-              <span class="title__text--line">Дополнительно</span>
+              Дополнительно
             </legend>
-            <div class="programm-selection__flex-inner--additional">
-              <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
-                <input class="input-item__hidden visually-hidden" type="checkbox" name="sweetener" checked>
-                <div class="input-item__input input-item__input--checkbox"></div>
-                <span class="input-item__label input-item__label--checkbox">Сахарозаменитель</span>
-              </label>
-              <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
-                <input class="input-item__hidden visually-hidden" type="checkbox" name="water">
-                <div class="input-item__input input-item__input--checkbox"></div>
-                <span class="input-item__label input-item__label--checkbox">Питьевая вода</span>
-              </label>
-              <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
-                <input class="input-item__hidden visually-hidden" type="checkbox" name="milk">
-                <div class="input-item__input input-item__input--checkbox"></div>
-                <span class="input-item__label input-item__label--checkbox">Молоко</span>
-              </label>
-              <label class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
-                <input class="input-item__hidden visually-hidden" type="checkbox" name="vitamins">
-                <div class="input-item__input input-item__input--checkbox"></div>
-                <span class="input-item__label input-item__label--checkbox">Витамины</span>
-              </label>
+            <div class="programm-selection__flex-inner programm-selection__flex-inner--additional">
+              <p class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
+                <input class="input-item__hidden visually-hidden" id="additional-sweetener" type="checkbox" name="sweetener" checked>
+                <label class="input-item__label input-item__label--checkbox" for="additional-sweetener">Сахарозаменитель</label>
+              </p>
+              <p class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
+                <input class="input-item__hidden visually-hidden" id="additional-water" type="checkbox" name="water">
+                <label class="input-item__label input-item__label--checkbox" for="additional-water">Питьевая вода</label>
+              </p>
+              <p class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
+                <input class="input-item__hidden visually-hidden" id="additional-milk" type="checkbox" name="milk">
+                <label class="input-item__label input-item__label--checkbox" for="additional-milk">Молоко</label>
+              </p>
+              <p class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
+                <input class="input-item__hidden visually-hidden" id="additional-vitamins" type="checkbox" name="vitamins">
+                <label class="input-item__label input-item__label--checkbox" for="additional-vitamins">Витамины</label>
+              </p>
             </div>
           </fieldset>
           <button class="programm-selection__button button" type="submit">Отправить заявку</button>
@@ -169,7 +162,6 @@
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Наш адрес - ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
         </picture>
-        <!-- <img class="contacts__map-pin" src="img/map-pin.png" alt="Метка на карте"> -->
       </div>
     </section>
   </main>
@@ -182,24 +174,24 @@
         <ul class="socials__list">
           <li class="socials__item socials__item--vk">
             <a class="socials__link" href="http://vk.com">
-              <svg class="socials__img socials__img--vk" width="22" height="12" aria-labelledby="heading">
-                <title id="heading">Мы вконтакте</title>
+              <svg class="socials__img socials__img--vk" width="22" height="12" aria-labelledby="svg-heading-vk">
+                <title id="svg-heading-vk">Мы вконтакте</title>
                 <use xlink:href="#sprite-icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item socials__item--inst">
             <a class="socials__link" href="http://instagramm.com">
-              <svg class="socials__img socials__img--inst" width="17" height="17" aria-labelledby="heading">
-                <title id="heading">Мы в инстаграмме</title>
+              <svg class="socials__img socials__img--inst" width="17" height="17" aria-labelledby="svg-heading-inst">
+                <title id="svg-heading-inst">Мы в инстаграмме</title>
                 <use xlink:href="#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item socials__item--fb">
             <a class="socials__link" href="http://facebook.com">
-              <svg class="socials__img socials__img--fb" width="10" height="19" aria-labelledby="heading">
-                <title id="heading">Мы на фейсбуке</title>
+              <svg class="socials__img socials__img--fb" width="10" height="19" aria-labelledby="svg-heading-fb">
+                <title id="svg-heading-fb">Мы на фейсбуке</title>
                 <use xlink:href="#sprite-icon-fb"></use>
               </svg>
             </a>
@@ -218,6 +210,7 @@
   </footer>
 </div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=cdd788e9-fb0b-4f1b-8096-92674e52bed3"></script>
-<script src="js/script.min.js" type="text/javascript"></script>
+<script src="js/script.min.js"></script>
+<script src="js/picturefill.min.js"></script>
 </body>
 </html>
