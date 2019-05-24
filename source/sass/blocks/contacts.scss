@@ -8,7 +8,7 @@
 
 .contacts__overlayer {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 26px;
 
@@ -52,6 +52,7 @@
 }
 
 .contacts__address {
+  margin-left: auto;
   font-style: normal;
   line-height: 20px;
 

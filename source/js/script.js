@@ -1,12 +1,15 @@
 var menu = document.querySelector(".main-nav");
 var menuButton = document.querySelector(".page-header__burger");
 
+menuButton.classList.remove("burger--hide");
 menu.classList.remove("main-nav--show");
+menu.classList.add("main-nav--absolute");
+
 
 menuButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  menuButton.classList.toggle("burger--close");
   menu.classList.toggle("main-nav--show");
+  menuButton.classList.toggle("burger--close");
 });
 
 

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,inital-scale=1.0">
   <title>Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="form-page">
@@ -20,8 +21,12 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy - функциональное питание для котов" width="191" height="39">
         </picture>
       </a>
-      <button class="page-header__burger burger" type="button"></button>
+      <!-- .burger--hide скрывает кнопку при выключенном js-->
+      <!-- .burger--close меняет бургер на крестик и обратно при клике на кнопку-->
+      <button class="page-header__burger burger burger--hide" type="button"></button>
     </div>
+    <!-- .main-nav--show показывает меню, переключается с помощью js-->
+    <!-- .main-nav--absolute добавляется js-ом, вырывает меню из потока-->
     <nav class="main-nav main-nav--show">
       <ul class="main-nav__list site-menu">
         <li class="site-menu__item">
@@ -54,11 +59,11 @@
             <div class="programm-selection__group-container container">
               <p class="programm-selection__item programm-selection__item--cat input-item input-item--text">
                 <label class="input-item__label input-item__label--text input-item__label--cat-name" for="cat_name">Имя:*</label>
-                <input class="input-item__input input-item__input--text" id="cat_name" name="cat-name" type="text" value="Барсик">
+                <input class="input-item__input input-item__input--text" id="cat_name" name="cat-name" type="text" value="Барсик" required>
               </p>
               <p class="programm-selection__item programm-selection__item--cat input-item">
                 <label class="input-item__label input-item__label--text input-item__label--cat-weight" for="cat_weight">Вес (кг):*</label>
-                <input class="input-item__input input-item__input--text" id="cat_weight" name="cat-weight" type="text" value="7">
+                <input class="input-item__input input-item__input--text" id="cat_weight" name="cat-weight" type="text" value="7" required>
               </p>
               <p class="programm-selection__item programm-selection__item--cat input-item">
                 <label class="input-item__label input-item__label--text input-item__label--cat-age" for="cat_age">Возраст (лет):</label>
@@ -78,7 +83,7 @@
                   <label class="input-item__label input-item__label--radio" for="purpose-mass">Набор массы</label>
                 </p>
                 <p class="programm-selection__item programm-selection__item--purpose input-item input-item--radio">
-                  <input class="input-item__hidden visually-hidden" id="purpose-unknown" type="radio" name="purpose">
+                  <input class="input-item__hidden visually-hidden" id="purpose-unknown" type="radio" name="purpose" disabled>
                   <label class="input-item__label input-item__label--radio" for="purpose-unknown">Не знаю (нужен ваш совет)</label>
                 </p>
               </div>
@@ -93,11 +98,11 @@
             <div class="programm-selection__flex-inner programm-selection__flex-inner--contacts">
               <p class="programm-selection__item programm-selection__item--contacts input-item input-item--text">
                 <label class="input-item__label input-item__label--text input-item__label--owner-email" for="owner_email">E-mail:*</label>
-                <input class="input-item__input input-item__input--text input-item__input--email" id="owner_email" name="owner-email" type="email" value="kuklachev@gmail.com">
+                <input class="input-item__input input-item__input--text input-item__input--email" id="owner_email" name="owner-email" type="email" value="kuklachev@gmail.com" required>
               </p>
               <p class="programm-selection__item programm-selection__item--contacts input-item input-item--text">
                 <label class="input-item__label input-item__label--text input-item__label--owner-phone" for="owner_phone">Телефон:*</label>
-                <input class="input-item__input input-item__input--text input-item__input--phone" id="owner_phone" name="owner-phone" type="tel" value="8 (960) 900-60-90">
+                <input class="input-item__input input-item__input--text input-item__input--phone" id="owner_phone" name="owner-phone" type="tel" value="8 (960) 900-60-90" required>
               </p>
             </div>
           </fieldset>
@@ -123,7 +128,7 @@
                 <label class="input-item__label input-item__label--checkbox" for="additional-water">Питьевая вода</label>
               </p>
               <p class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
-                <input class="input-item__hidden visually-hidden" id="additional-milk" type="checkbox" name="milk">
+                <input class="input-item__hidden visually-hidden" id="additional-milk" type="checkbox" name="milk" disabled>
                 <label class="input-item__label input-item__label--checkbox" for="additional-milk">Молоко</label>
               </p>
               <p class="programm-selection__item programm-selection__item--additional input-item input-item--checkbox">
@@ -201,7 +206,8 @@
       <div class="page-footer__htmlacademy htmlacademy">
         <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="htmlacademy__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="htmlacademy__logo-img" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
+          <svg class="htmlacademy__logo-img" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svg-heading-htmlacademy" width="26.943" height="34.09">
+            <title id="svg-heading-htmlacademy">HTML Academy</title>
             <use xlink:href="#sprite-htmlacademy"></use>
           </svg>
         </a>

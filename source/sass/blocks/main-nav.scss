@@ -4,8 +4,20 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 50%;
+  }
 }
 
 .main-nav--show {
   display: flex;
+}
+
+.main-nav--absolute {
+  @media (max-width: $tablet-width - 0.02px) {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+  }
 }

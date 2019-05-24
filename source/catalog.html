@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,inital-scale=1.0">
   <title>Кэт энерджи</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="catalog-page">
@@ -20,8 +21,12 @@
           <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy - функциональное питание для котов" width="191" height="39">
         </picture>
       </a>
-      <button class="page-header__burger burger" type="button"></button>
+      <!-- .burger--hide скрывает кнопку при выключенном js-->
+      <!-- .burger--close меняет бургер на крестик и обратно при клике на кнопку-->
+      <button class="page-header__burger burger burger--hide" type="button"></button>
     </div>
+    <!-- .main-nav--show показывает меню, переключается с помощью js-->
+    <!-- .main-nav--absolute добавляется js-ом, вырывает меню из потока-->
     <nav class="main-nav main-nav--show">
       <ul class="main-nav__list site-menu">
         <li class="site-menu__item">
@@ -44,7 +49,7 @@
         <h2 class="visually-hidden">Результаты поиска по каталогу</h2>
         <ul class="catalog-search__list catalog-grid">
           <li class="catalog-grid__item catalog-card">
-            <a class="catalog-card__img-link" href="catalog.html">
+            <a class="catalog-card__img-link" href="product.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
@@ -55,7 +60,7 @@
               </picture>
             </a>
             <div class="catalog-card__desc">
-              <a class="catalog-card__title-link" href="catalog.html">
+              <a class="catalog-card__title-link" href="product.html">
                 <h3 class="catalog-card__title title">Cat Energy PRO 500 г</h3>
               </a>
               <dl class="catalog-card__properties">
@@ -76,7 +81,7 @@
             <a class="button catalog-card__button" href="product.html">Заказать</a>
           </li>
           <li class="catalog-grid__item catalog-card">
-            <a class="catalog-card__img-link" href="catalog.html">
+            <a class="catalog-card__img-link" href="product.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
@@ -87,7 +92,7 @@
               </picture>
             </a>
             <div class="catalog-card__desc">
-              <a class="catalog-card__title-link" href="catalog.html">
+              <a class="catalog-card__title-link" href="product.html">
                 <h3 class="catalog-card__title title">Cat Energy PRO 1000 г</h3>
               </a>
               <dl class="catalog-card__properties">
@@ -108,7 +113,7 @@
             <a class="button catalog-card__button" href="product.html">Заказать</a>
           </li>
           <li class="catalog-grid__item catalog-card">
-            <a class="catalog-card__img-link" href="catalog.html">
+            <a class="catalog-card__img-link" href="product.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
@@ -119,7 +124,7 @@
               </picture>
             </a>
             <div class="catalog-card__desc">
-              <a class="catalog-card__title-link" href="catalog.html">
+              <a class="catalog-card__title-link" href="product.html">
                 <h3 class="catalog-card__title title">Cat Energy PRO 500 г</h3>
               </a>
               <dl class="catalog-card__properties">
@@ -140,7 +145,7 @@
             <a class="button catalog-card__button" href="product.html">Заказать</a>
           </li>
           <li class="catalog-grid__item catalog-card">
-            <a class="catalog-card__img-link" href="catalog.html">
+            <a class="catalog-card__img-link" href="product.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
@@ -151,7 +156,7 @@
               </picture>
             </a>
             <div class="catalog-card__desc">
-              <a class="catalog-card__title-link" href="catalog.html">
+              <a class="catalog-card__title-link" href="product.html">
                 <h3 class="catalog-card__title title">Cat Energy PRO 1000 г</h3>
               </a>
               <dl class="catalog-card__properties">
@@ -172,7 +177,7 @@
             <a class="button catalog-card__button" href="product.html">Заказать</a>
           </li>
           <li class="catalog-grid__item catalog-card">
-            <a class="catalog-card__img-link" href="catalog.html">
+            <a class="catalog-card__img-link" href="product.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
@@ -183,7 +188,7 @@
               </picture>
             </a>
             <div class="catalog-card__desc">
-              <a class="catalog-card__title-link" href="catalog.html">
+              <a class="catalog-card__title-link" href="product.html">
                 <h3 class="catalog-card__title title">Cat Energy Slim 500 г</h3>
               </a>
               <dl class="catalog-card__properties">
@@ -204,7 +209,7 @@
             <a class="button catalog-card__button" href="product.html">Заказать</a>
           </li>
           <li class="catalog-grid__item catalog-card">
-            <a class="catalog-card__img-link" href="catalog.html">
+            <a class="catalog-card__img-link" href="product.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
@@ -215,7 +220,7 @@
               </picture>
             </a>
             <div class="catalog-card__desc">
-              <a class="catalog-card__title-link" href="catalog.html">
+              <a class="catalog-card__title-link" href="product.html">
                 <h3 class="catalog-card__title title">Cat Energy Slim 1000 г</h3>
               </a>
               <dl class="catalog-card__properties">
@@ -236,7 +241,7 @@
             <a class="button catalog-card__button" href="product.html">Заказать</a>
           </li>
           <li class="catalog-grid__item catalog-card">
-            <a class="catalog-card__img-link" href="catalog.html">
+            <a class="catalog-card__img-link" href="product.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
@@ -247,7 +252,7 @@
               </picture>
             </a>
             <div class="catalog-card__desc">
-              <a class="catalog-card__title-link" href="catalog.html">
+              <a class="catalog-card__title-link" href="product.html">
                 <h3 class="catalog-card__title title">Cat Energy Slim 500 г</h3>
               </a>
               <dl class="catalog-card__properties">
@@ -268,7 +273,7 @@
             <a class="button catalog-card__button" href="product.html">Заказать</a>
           </li>
           <li class="catalog-grid__item show-more">
-            <a class="show-more__button-plus" href="catalog.html">
+            <a class="show-more__button-plus" href="product.html">
               <span class="visually-hidden">Показать ещё</span>
             </a>
             <p class="show-more__title title">Показать еще 100500 товаров</p>
@@ -391,7 +396,8 @@
       <div class="page-footer__htmlacademy htmlacademy">
         <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="htmlacademy__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="htmlacademy__logo-img" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
+          <svg class="htmlacademy__logo-img" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svg-heading-htmlacademy" width="26.943" height="34.09">
+            <title id="svg-heading-htmlacademy">HTML Academy</title>
             <use xlink:href="#sprite-htmlacademy"></use>
           </svg>
         </a>

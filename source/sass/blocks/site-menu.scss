@@ -2,9 +2,13 @@
   @include list-reset();
   width: 100%;
 
+  @media (max-width: $tablet-width - 0.02px) {
+    background-color: #ffffff;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
     width: auto;
     max-width: 500px;
   }

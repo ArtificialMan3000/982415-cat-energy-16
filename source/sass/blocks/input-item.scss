@@ -1,22 +1,14 @@
 .input-item {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   font-family: $title-font-family;
   font-size: $title3-font-size;
   line-height: 18px;
   text-transform: uppercase;
-
-  &--radio:active {
-    opacity: 0.3;
-  }
-
-  &--checkbox:active {
-    opacity: 0.3;
-  }
 }
 
 .input-item__label {
-  flex-shrink: 0;
   margin-right: 13px;
   color: #222222;
   cursor: pointer;
@@ -80,11 +72,17 @@
     }
 
     &:hover::before,
-    &:focus::before {
+    .input-item__hidden:focus + &::before {
       border-color: #bababa;
     }
 
-    &:active::before {
+    &:active,
+    .input-item__hidden:disabled + & {
+      opacity: 0.3;
+    }
+
+    &:active::before,
+    .input-item__hidden:disabled + &::before {
       border-color: #bababa;
       outline: unset;
     }
@@ -122,11 +120,17 @@
     }
 
     &:hover::before,
-    &:focus::before {
+    .input-item__hidden:focus + &::before {
       border-color: #bababa;
     }
 
-    &:active::before {
+    &:active,
+    .input-item__hidden:disabled + & {
+      opacity: 0.3;
+    }
+
+    &:active::before,
+    .input-item__hidden:disabled + &::before {
       border-color: #bababa;
       outline: unset;
     }
@@ -180,6 +184,7 @@
   &:hover,
   &:focus {
     border-color: #cdcdcd;
+    outline: none;
   }
 
   &:active {
@@ -190,6 +195,7 @@
   &:invalid {
     border: 1px solid #ff8282;
     outline: 1px solid #ff8282;
+    box-shadow: none;
   }
 
   &--text {

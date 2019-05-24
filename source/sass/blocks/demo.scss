@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    background-color: initial;
+    background-color: transparent;
 
     @media (max-width: $desktop-width - 0.02px) {
       border-top: $main-divider #e6e6e6;
