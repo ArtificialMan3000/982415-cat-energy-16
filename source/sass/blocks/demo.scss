@@ -68,6 +68,10 @@
 
 .demo__parameters {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+  }
 }
 
 .demo__interactive {

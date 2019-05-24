@@ -1,5 +1,7 @@
 .site-menu {
   @include list-reset();
+  display: flex;
+  flex-direction: column;
   width: 100%;
 
   @media (max-width: $tablet-width - 0.02px) {
@@ -7,7 +9,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: auto;
     max-width: 500px;

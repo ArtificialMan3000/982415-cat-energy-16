@@ -2,8 +2,11 @@
   @include container-tablet();
   @include container-desktop();
 
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     min-height: 90px;
     padding-top: 18px;
@@ -21,6 +24,11 @@
     // left: 0;
     // right: 0;
   }
+}
+
+.page-header__ie-fixer {
+  display: flex;
+  flex-direction: column;
 }
 
 .page-header__row {
